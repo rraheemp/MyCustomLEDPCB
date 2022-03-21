@@ -1,0 +1,10 @@
+23:19:46 **** Incremental Build of configuration Debug for project DevBoard ****
+make -j12 all 
+arm-none-eabi-size   DevBoard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15024	     20	   1980	  17024	   4280	DevBoard.elf
+Finished building: default.size.stdout
+ 
+
+23:19:46 Build Finished. 0 errors, 0 warnings. (took 310ms)
+

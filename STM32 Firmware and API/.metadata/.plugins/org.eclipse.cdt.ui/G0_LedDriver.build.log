@@ -1,0 +1,10 @@
+12:21:55 **** Incremental Build of configuration Debug for project G0_LedDriver ****
+make -j12 all 
+arm-none-eabi-size   G0_LedDriver.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4240	     20	   1572	   5832	   16c8	G0_LedDriver.elf
+Finished building: default.size.stdout
+ 
+
+12:21:56 Build Finished. 0 errors, 0 warnings. (took 397ms)
+

@@ -1,0 +1,11 @@
+AR checking written on:
+'C:\Users\Rara_\Documents\GitHub\LED-Driver-Prototype\LED Driver Prototpye - V2\LED Driver Prototype V2_AR-Check.txt'
+'action_menu_annular_check.py'
+version = 1.7.2
+Testing PCB for Annular Rings
+TH Pads >= 0.125 Vias >= 0.125
+PHD margin on PTH = 0
+
+VIAS that Pass = 271; Fails = 0
+TH PADS that Pass = 30; Fails = 0
+NPTH PADS that Pass = 0; Fails = 0

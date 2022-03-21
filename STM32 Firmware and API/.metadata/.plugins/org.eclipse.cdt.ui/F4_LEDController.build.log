@@ -1,0 +1,10 @@
+13:09:09 **** Incremental Build of configuration Debug for project F4_LEDController ****
+make -j12 all 
+arm-none-eabi-size   F4_LEDController.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16440	     20	   2068	  18528	   4860	F4_LEDController.elf
+Finished building: default.size.stdout
+ 
+
+13:09:09 Build Finished. 0 errors, 0 warnings. (took 406ms)
+

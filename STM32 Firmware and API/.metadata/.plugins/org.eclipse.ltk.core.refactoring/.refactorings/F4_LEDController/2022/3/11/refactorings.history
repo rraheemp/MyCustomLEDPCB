@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;F4_LEDController/IS31Fl3743B&apos; to &apos;IS31FL3743B&apos;" description="Rename resource &apos;IS31Fl3743B&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="IS31Fl3743B" name="IS31FL3743B" stamp="1646803097544" updateReferences="true"/>
+</session>

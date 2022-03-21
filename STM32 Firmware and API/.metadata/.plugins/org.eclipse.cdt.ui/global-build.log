@@ -1,0 +1,699 @@
+00:08:46 **** Clean-only build of configuration Debug for project LMP-01 ****
+make -j12 clean 
+rm -rf ./MyDelay/MyDelay.d ./MyDelay/MyDelay.o
+rm -rf ./IS31FL3743B/IS31FL3743B.d ./IS31FL3743B/IS31FL3743B.o
+rm -rf ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.d ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.o ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.d ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.o ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.d ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.o ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.d ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.o ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.d ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.o ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.d ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.o ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.d ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.o ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.d ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.o ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.d ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.o ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.d ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.o ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.d ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.o ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.d ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.o ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.d ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.o ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.d ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.o ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.d ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.o ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.d ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.o ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.d ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.o ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.d ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.o ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_dma.d ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_dma.o ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.d ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.o
+rm -rf ./Core/Startup/startup_stm32g031f6px.d ./Core/Startup/startup_stm32g031f6px.o
+rm -rf ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/stm32g0xx_hal_msp.d ./Core/Src/stm32g0xx_hal_msp.o ./Core/Src/stm32g0xx_it.d ./Core/Src/stm32g0xx_it.o ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/system_stm32g0xx.d ./Core/Src/system_stm32g0xx.o
+rm -rf LMP-01.bin LMP-01.elf LMP-01.list default.size.stdout
+ 
+00:09:39 **** Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../MyDelay/MyDelay.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MyDelay/MyDelay.d" -MT"MyDelay/MyDelay.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MyDelay/MyDelay.o"
+arm-none-eabi-gcc "../IS31FL3743B/IS31FL3743B.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"IS31FL3743B/IS31FL3743B.d" -MT"IS31FL3743B/IS31FL3743B.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "IS31FL3743B/IS31FL3743B.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.o"
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_init':
+../IS31FL3743B/IS31FL3743B.c:88:2: warning: implicit declaration of function 'LedBlink' [-Wimplicit-function-declaration]
+   88 |  LedBlink(1);
+      |  ^~~~~~~~
+../IS31FL3743B/IS31FL3743B.c: At top level:
+../IS31FL3743B/IS31FL3743B.c:156:10: error: redefinition of 'IS31FL3743B_TempStat'
+  156 | uint16_t IS31FL3743B_TempStat(void) {
+      |          ^~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:93:10: note: previous definition of 'IS31FL3743B_TempStat' was here
+   93 | uint16_t IS31FL3743B_TempStat(void) {
+      |          ^~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:171:9: error: redefinition of 'IS31FL3743B_SetDotColor'
+  171 | uint8_t IS31FL3743B_SetDotColor(uint8_t led, uint8_t color, uint8_t intensity) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:108:9: note: previous definition of 'IS31FL3743B_SetDotColor' was here
+  108 | uint8_t IS31FL3743B_SetDotColor(uint8_t led, uint8_t color, uint8_t intensity) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:313:1: error: version control conflict marker in file
+  313 | =======
+      | ^~~~~~~
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_Reset':
+../IS31FL3743B/IS31FL3743B.c:334:1: error: version control conflict marker in file
+  334 | =======
+      | ^~~~~~~
+../IS31FL3743B/IS31FL3743B.c:349:1: error: version control conflict marker in file
+  349 | =======
+      | ^~~~~~~
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_Dumby':
+../IS31FL3743B/IS31FL3743B.c:366:10: error: redefinition of 'spiDataTx'
+  366 |  uint8_t spiDataTx[3] = { 0x00, 0x00, 0x00 };
+      |          ^~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:361:10: note: previous definition of 'spiDataTx' was here
+  361 |  uint8_t spiDataTx[3] = { 0x00, 0x00, 0x00 };
+      |          ^~~~~~~~~
+make: *** [IS31FL3743B/subdir.mk:19: IS31FL3743B/IS31FL3743B.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+00:10:37 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../IS31FL3743B/IS31FL3743B.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"IS31FL3743B/IS31FL3743B.d" -MT"IS31FL3743B/IS31FL3743B.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "IS31FL3743B/IS31FL3743B.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_dma.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_dma.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.o"
+arm-none-eabi-gcc -mcpu=cortex-m0plus -g -DDEBUG -c -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32g031f6px.d" -MT"Core/Startup/startup_stm32g031f6px.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Startup/startup_stm32g031f6px.o" "../Core/Startup/startup_stm32g031f6px.s"
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_init':
+../IS31FL3743B/IS31FL3743B.c:88:2: warning: implicit declaration of function 'LedBlink' [-Wimplicit-function-declaration]
+   88 |  LedBlink(1);
+      |  ^~~~~~~~
+../IS31FL3743B/IS31FL3743B.c: At top level:
+../IS31FL3743B/IS31FL3743B.c:156:10: error: redefinition of 'IS31FL3743B_TempStat'
+  156 | uint16_t IS31FL3743B_TempStat(void) {
+      |          ^~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:93:10: note: previous definition of 'IS31FL3743B_TempStat' was here
+   93 | uint16_t IS31FL3743B_TempStat(void) {
+      |          ^~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:171:9: error: redefinition of 'IS31FL3743B_SetDotColor'
+  171 | uint8_t IS31FL3743B_SetDotColor(uint8_t led, uint8_t color, uint8_t intensity) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:108:9: note: previous definition of 'IS31FL3743B_SetDotColor' was here
+  108 | uint8_t IS31FL3743B_SetDotColor(uint8_t led, uint8_t color, uint8_t intensity) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:313:1: error: version control conflict marker in file
+  313 | =======
+      | ^~~~~~~
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_Reset':
+../IS31FL3743B/IS31FL3743B.c:334:1: error: version control conflict marker in file
+  334 | =======
+      | ^~~~~~~
+../IS31FL3743B/IS31FL3743B.c:349:1: error: version control conflict marker in file
+  349 | =======
+      | ^~~~~~~
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_Dumby':
+../IS31FL3743B/IS31FL3743B.c:366:10: error: redefinition of 'spiDataTx'
+  366 |  uint8_t spiDataTx[3] = { 0x00, 0x00, 0x00 };
+      |          ^~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:361:10: note: previous definition of 'spiDataTx' was here
+  361 |  uint8_t spiDataTx[3] = { 0x00, 0x00, 0x00 };
+      |          ^~~~~~~~~
+make: *** [IS31FL3743B/subdir.mk:19: IS31FL3743B/IS31FL3743B.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+00:11:15 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../IS31FL3743B/IS31FL3743B.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"IS31FL3743B/IS31FL3743B.d" -MT"IS31FL3743B/IS31FL3743B.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "IS31FL3743B/IS31FL3743B.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32g0xx_hal_msp.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32g0xx_hal_msp.d" -MT"Core/Src/stm32g0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32g0xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32g0xx_it.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32g0xx_it.d" -MT"Core/Src/stm32g0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32g0xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32g0xx.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32g0xx.d" -MT"Core/Src/system_stm32g0xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32g0xx.o"
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_init':
+../IS31FL3743B/IS31FL3743B.c:88:2: warning: implicit declaration of function 'LedBlink' [-Wimplicit-function-declaration]
+   88 |  LedBlink(1);
+      |  ^~~~~~~~
+../IS31FL3743B/IS31FL3743B.c: At top level:
+../IS31FL3743B/IS31FL3743B.c:156:10: error: redefinition of 'IS31FL3743B_TempStat'
+  156 | uint16_t IS31FL3743B_TempStat(void) {
+      |          ^~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:93:10: note: previous definition of 'IS31FL3743B_TempStat' was here
+   93 | uint16_t IS31FL3743B_TempStat(void) {
+      |          ^~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:171:9: error: redefinition of 'IS31FL3743B_SetDotColor'
+  171 | uint8_t IS31FL3743B_SetDotColor(uint8_t led, uint8_t color, uint8_t intensity) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:108:9: note: previous definition of 'IS31FL3743B_SetDotColor' was here
+  108 | uint8_t IS31FL3743B_SetDotColor(uint8_t led, uint8_t color, uint8_t intensity) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:313:1: error: version control conflict marker in file
+  313 | =======
+      | ^~~~~~~
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_Reset':
+../IS31FL3743B/IS31FL3743B.c:334:1: error: version control conflict marker in file
+  334 | =======
+      | ^~~~~~~
+../IS31FL3743B/IS31FL3743B.c:349:1: error: version control conflict marker in file
+  349 | =======
+      | ^~~~~~~
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_Dumby':
+../IS31FL3743B/IS31FL3743B.c:366:10: error: redefinition of 'spiDataTx'
+  366 |  uint8_t spiDataTx[3] = { 0x00, 0x00, 0x00 };
+      |          ^~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:361:10: note: previous definition of 'spiDataTx' was here
+  361 |  uint8_t spiDataTx[3] = { 0x00, 0x00, 0x00 };
+      |          ^~~~~~~~~
+make: *** [IS31FL3743B/subdir.mk:19: IS31FL3743B/IS31FL3743B.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c:118:1: error: expected identifier or '(' before '}' token
+  118 | }
+      | ^
+../Core/Src/main.c: In function 'MX_SPI1_Init':
+../Core/Src/main.c:197:4: error: stray '@' in program
+  197 |  * @brief SPI1 Initialization Function
+      |    ^
+../Core/Src/main.c:197:5: warning: implicit declaration of function 'brief' [-Wimplicit-function-declaration]
+  197 |  * @brief SPI1 Initialization Function
+      |     ^~~~~
+../Core/Src/main.c:197:2: error: invalid type argument of unary '*' (have 'int')
+  197 |  * @brief SPI1 Initialization Function
+../Core/Src/main.c:197:16: error: expected ';' before 'Initialization'
+  197 |  * @brief SPI1 Initialization Function
+      |                ^~~~~~~~~~~~~~
+../Core/Src/main.c:198:4: error: stray '@' in program
+  198 |  * @param None
+      |    ^
+../Core/Src/main.c:199:4: error: stray '@' in program
+  199 |  * @retval None
+      |    ^
+../Core/Src/main.c:461:1: error: expected declaration or statement at end of input
+  461 | }
+      | ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:58:13: warning: 'MX_GPIO_Init' used but never defined
+   58 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:60:13: warning: 'MX_USART2_UART_Init' used but never defined
+   60 | static void MX_USART2_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:61:13: warning: 'MX_TIM16_Init' used but never defined
+   61 | static void MX_TIM16_Init(void);
+      |             ^~~~~~~~~~~~~
+../Core/Src/main.c:62:13: warning: 'MX_SPI2_Init' used but never defined
+   62 | static void MX_SPI2_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:454:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  454 | void Error_Handler(void) {
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:438:6: warning: 'HAL_GPIO_EXTI_Callback' defined but not used [-Wunused-function]
+  438 | void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+00:11:44 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../IS31FL3743B/IS31FL3743B.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"IS31FL3743B/IS31FL3743B.d" -MT"IS31FL3743B/IS31FL3743B.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "IS31FL3743B/IS31FL3743B.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_init':
+../IS31FL3743B/IS31FL3743B.c:88:2: warning: implicit declaration of function 'LedBlink' [-Wimplicit-function-declaration]
+   88 |  LedBlink(1);
+      |  ^~~~~~~~
+../IS31FL3743B/IS31FL3743B.c: At top level:
+../IS31FL3743B/IS31FL3743B.c:156:10: error: redefinition of 'IS31FL3743B_TempStat'
+  156 | uint16_t IS31FL3743B_TempStat(void) {
+      |          ^~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:93:10: note: previous definition of 'IS31FL3743B_TempStat' was here
+   93 | uint16_t IS31FL3743B_TempStat(void) {
+      |          ^~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:171:9: error: redefinition of 'IS31FL3743B_SetDotColor'
+  171 | uint8_t IS31FL3743B_SetDotColor(uint8_t led, uint8_t color, uint8_t intensity) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:108:9: note: previous definition of 'IS31FL3743B_SetDotColor' was here
+  108 | uint8_t IS31FL3743B_SetDotColor(uint8_t led, uint8_t color, uint8_t intensity) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:313:1: error: version control conflict marker in file
+  313 | =======
+      | ^~~~~~~
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_Reset':
+../IS31FL3743B/IS31FL3743B.c:334:1: error: version control conflict marker in file
+  334 | =======
+      | ^~~~~~~
+../IS31FL3743B/IS31FL3743B.c:349:1: error: version control conflict marker in file
+  349 | =======
+      | ^~~~~~~
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_Dumby':
+../IS31FL3743B/IS31FL3743B.c:366:10: error: redefinition of 'spiDataTx'
+  366 |  uint8_t spiDataTx[3] = { 0x00, 0x00, 0x00 };
+      |          ^~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:361:10: note: previous definition of 'spiDataTx' was here
+  361 |  uint8_t spiDataTx[3] = { 0x00, 0x00, 0x00 };
+      |          ^~~~~~~~~
+make: *** [IS31FL3743B/subdir.mk:19: IS31FL3743B/IS31FL3743B.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c:118:1: error: expected identifier or '(' before '}' token
+  118 | }
+      | ^
+../Core/Src/main.c: In function 'MX_SPI1_Init':
+../Core/Src/main.c:198:13: error: invalid storage class for function 'MX_SPI1_Init'
+  198 | static void MX_SPI1_Init(void) {
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:237:13: error: invalid storage class for function 'MX_SPI2_Init'
+  237 | static void MX_SPI2_Init(void) {
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:274:13: error: invalid storage class for function 'MX_TIM16_Init'
+  274 | static void MX_TIM16_Init(void) {
+      |             ^~~~~~~~~~~~~
+../Core/Src/main.c: In function 'MX_TIM16_Init':
+../Core/Src/main.c:277:2: error: expected expression before '<<' token
+  277 |  <<<<<<< Updated upstream
+      |  ^~
+../Core/Src/main.c:300:2: error: expected expression before '<<' token
+  300 |  <<<<<<< Updated upstream
+      |  ^~
+../Core/Src/main.c: In function 'MX_SPI1_Init':
+../Core/Src/main.c:326:13: error: invalid storage class for function 'MX_USART2_UART_Init'
+  326 | static void MX_USART2_UART_Init(void) {
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:360:13: error: invalid storage class for function 'MX_GPIO_Init'
+  360 | static void MX_GPIO_Init(void) {
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'MX_GPIO_Init':
+../Core/Src/main.c:362:1: error: version control conflict marker in file
+  362 | <<<<<<< Updated upstream
+      | ^~~~~~~
+../Core/Src/main.c:368:2: error: expected expression before '<<' token
+  368 |  <<<<<<< Updated upstream
+      |  ^~
+../Core/Src/main.c: In function 'MX_SPI1_Init':
+../Core/Src/main.c:414:13: error: nested function 'LedBlink' declared 'extern'
+  414 | extern void LedBlink(uint8_t HowManyTimes) {
+      |             ^~~~~~~~
+../Core/Src/main.c:447:1: error: expected declaration or statement at end of input
+  447 | }
+      | ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:58:13: warning: 'MX_GPIO_Init' used but never defined
+   58 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:60:13: warning: 'MX_USART2_UART_Init' used but never defined
+   60 | static void MX_USART2_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:61:13: warning: 'MX_TIM16_Init' used but never defined
+   61 | static void MX_TIM16_Init(void);
+      |             ^~~~~~~~~~~~~
+../Core/Src/main.c:62:13: warning: 'MX_SPI2_Init' used but never defined
+   62 | static void MX_SPI2_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:440:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  440 | void Error_Handler(void) {
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:424:6: warning: 'HAL_GPIO_EXTI_Callback' defined but not used [-Wunused-function]
+  424 | void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:414:13: warning: 'LedBlink' defined but not used [-Wunused-function]
+  414 | extern void LedBlink(uint8_t HowManyTimes) {
+      |             ^~~~~~~~
+../Core/Src/main.c:360:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  360 | static void MX_GPIO_Init(void) {
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:326:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  326 | static void MX_USART2_UART_Init(void) {
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:274:13: warning: 'MX_TIM16_Init' defined but not used [-Wunused-function]
+  274 | static void MX_TIM16_Init(void) {
+      |             ^~~~~~~~~~~~~
+../Core/Src/main.c:237:13: warning: 'MX_SPI2_Init' defined but not used [-Wunused-function]
+  237 | static void MX_SPI2_Init(void) {
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:198:13: warning: 'MX_SPI1_Init' defined but not used [-Wunused-function]
+  198 | static void MX_SPI1_Init(void) {
+      |             ^~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+00:12:23 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../IS31FL3743B/IS31FL3743B.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"IS31FL3743B/IS31FL3743B.d" -MT"IS31FL3743B/IS31FL3743B.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "IS31FL3743B/IS31FL3743B.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_init':
+../IS31FL3743B/IS31FL3743B.c:100:2: warning: implicit declaration of function 'LedBlink' [-Wimplicit-function-declaration]
+  100 |  LedBlink(1);
+      |  ^~~~~~~~
+../IS31FL3743B/IS31FL3743B.c: At top level:
+../IS31FL3743B/IS31FL3743B.c:168:10: error: redefinition of 'IS31FL3743B_TempStat'
+  168 | uint16_t IS31FL3743B_TempStat(void) {
+      |          ^~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:105:10: note: previous definition of 'IS31FL3743B_TempStat' was here
+  105 | uint16_t IS31FL3743B_TempStat(void) {
+      |          ^~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:183:9: error: redefinition of 'IS31FL3743B_SetDotColor'
+  183 | uint8_t IS31FL3743B_SetDotColor(uint8_t led, uint8_t color, uint8_t intensity) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:120:9: note: previous definition of 'IS31FL3743B_SetDotColor' was here
+  120 | uint8_t IS31FL3743B_SetDotColor(uint8_t led, uint8_t color, uint8_t intensity) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:325:1: error: version control conflict marker in file
+  325 | =======
+      | ^~~~~~~
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_Reset':
+../IS31FL3743B/IS31FL3743B.c:346:1: error: version control conflict marker in file
+  346 | =======
+      | ^~~~~~~
+../IS31FL3743B/IS31FL3743B.c:361:1: error: version control conflict marker in file
+  361 | =======
+      | ^~~~~~~
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_Dumby':
+../IS31FL3743B/IS31FL3743B.c:378:10: error: redefinition of 'spiDataTx'
+  378 |  uint8_t spiDataTx[3] = { 0x00, 0x00, 0x00 };
+      |          ^~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:373:10: note: previous definition of 'spiDataTx' was here
+  373 |  uint8_t spiDataTx[3] = { 0x00, 0x00, 0x00 };
+      |          ^~~~~~~~~
+make: *** [IS31FL3743B/subdir.mk:19: IS31FL3743B/IS31FL3743B.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c:118:1: error: expected identifier or '(' before '}' token
+  118 | }
+      | ^
+../Core/Src/main.c: In function 'MX_SPI1_Init':
+../Core/Src/main.c:198:13: error: invalid storage class for function 'MX_SPI1_Init'
+  198 | static void MX_SPI1_Init(void) {
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:237:13: error: invalid storage class for function 'MX_SPI2_Init'
+  237 | static void MX_SPI2_Init(void) {
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:274:13: error: invalid storage class for function 'MX_TIM16_Init'
+  274 | static void MX_TIM16_Init(void) {
+      |             ^~~~~~~~~~~~~
+../Core/Src/main.c: In function 'MX_TIM16_Init':
+../Core/Src/main.c:277:2: error: expected expression before '<<' token
+  277 |  <<<<<<< Updated upstream
+      |  ^~
+../Core/Src/main.c:300:2: error: expected expression before '<<' token
+  300 |  <<<<<<< Updated upstream
+      |  ^~
+../Core/Src/main.c: In function 'MX_SPI1_Init':
+../Core/Src/main.c:326:13: error: invalid storage class for function 'MX_USART2_UART_Init'
+  326 | static void MX_USART2_UART_Init(void) {
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:360:13: error: invalid storage class for function 'MX_GPIO_Init'
+  360 | static void MX_GPIO_Init(void) {
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'MX_GPIO_Init':
+../Core/Src/main.c:362:1: error: version control conflict marker in file
+  362 | <<<<<<< Updated upstream
+      | ^~~~~~~
+../Core/Src/main.c:368:2: error: expected expression before '<<' token
+  368 |  <<<<<<< Updated upstream
+      |  ^~
+../Core/Src/main.c: In function 'MX_SPI1_Init':
+../Core/Src/main.c:414:13: error: nested function 'LedBlink' declared 'extern'
+  414 | extern void LedBlink(uint8_t HowManyTimes) {
+      |             ^~~~~~~~
+../Core/Src/main.c:447:1: error: expected declaration or statement at end of input
+  447 | }
+      | ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:58:13: warning: 'MX_GPIO_Init' used but never defined
+   58 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:60:13: warning: 'MX_USART2_UART_Init' used but never defined
+   60 | static void MX_USART2_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:61:13: warning: 'MX_TIM16_Init' used but never defined
+   61 | static void MX_TIM16_Init(void);
+      |             ^~~~~~~~~~~~~
+../Core/Src/main.c:62:13: warning: 'MX_SPI2_Init' used but never defined
+   62 | static void MX_SPI2_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:440:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  440 | void Error_Handler(void) {
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:424:6: warning: 'HAL_GPIO_EXTI_Callback' defined but not used [-Wunused-function]
+  424 | void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:414:13: warning: 'LedBlink' defined but not used [-Wunused-function]
+  414 | extern void LedBlink(uint8_t HowManyTimes) {
+      |             ^~~~~~~~
+../Core/Src/main.c:360:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  360 | static void MX_GPIO_Init(void) {
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:326:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  326 | static void MX_USART2_UART_Init(void) {
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:274:13: warning: 'MX_TIM16_Init' defined but not used [-Wunused-function]
+  274 | static void MX_TIM16_Init(void) {
+      |             ^~~~~~~~~~~~~
+../Core/Src/main.c:237:13: warning: 'MX_SPI2_Init' defined but not used [-Wunused-function]
+  237 | static void MX_SPI2_Init(void) {
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:198:13: warning: 'MX_SPI1_Init' defined but not used [-Wunused-function]
+  198 | static void MX_SPI1_Init(void) {
+      |             ^~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+00:13:47 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../MyDelay/MyDelay.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MyDelay/MyDelay.d" -MT"MyDelay/MyDelay.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MyDelay/MyDelay.o"
+arm-none-eabi-gcc "../IS31FL3743B/IS31FL3743B.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"IS31FL3743B/IS31FL3743B.d" -MT"IS31FL3743B/IS31FL3743B.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "IS31FL3743B/IS31FL3743B.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.o"
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_init':
+../IS31FL3743B/IS31FL3743B.c:100:2: warning: implicit declaration of function 'LedBlink' [-Wimplicit-function-declaration]
+  100 |  LedBlink(1);
+      |  ^~~~~~~~
+../IS31FL3743B/IS31FL3743B.c: At top level:
+../IS31FL3743B/IS31FL3743B.c:168:10: error: redefinition of 'IS31FL3743B_TempStat'
+  168 | uint16_t IS31FL3743B_TempStat(void) {
+      |          ^~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:105:10: note: previous definition of 'IS31FL3743B_TempStat' was here
+  105 | uint16_t IS31FL3743B_TempStat(void) {
+      |          ^~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:183:9: error: redefinition of 'IS31FL3743B_SetDotColor'
+  183 | uint8_t IS31FL3743B_SetDotColor(uint8_t led, uint8_t color, uint8_t intensity) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:120:9: note: previous definition of 'IS31FL3743B_SetDotColor' was here
+  120 | uint8_t IS31FL3743B_SetDotColor(uint8_t led, uint8_t color, uint8_t intensity) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:325:1: error: version control conflict marker in file
+  325 | =======
+      | ^~~~~~~
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_Reset':
+../IS31FL3743B/IS31FL3743B.c:346:1: error: version control conflict marker in file
+  346 | =======
+      | ^~~~~~~
+../IS31FL3743B/IS31FL3743B.c:361:1: error: version control conflict marker in file
+  361 | =======
+      | ^~~~~~~
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_Dumby':
+../IS31FL3743B/IS31FL3743B.c:378:10: error: redefinition of 'spiDataTx'
+  378 |  uint8_t spiDataTx[3] = { 0x00, 0x00, 0x00 };
+      |          ^~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:373:10: note: previous definition of 'spiDataTx' was here
+  373 |  uint8_t spiDataTx[3] = { 0x00, 0x00, 0x00 };
+      |          ^~~~~~~~~
+make: *** [IS31FL3743B/subdir.mk:19: IS31FL3743B/IS31FL3743B.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+00:14:57 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../IS31FL3743B/IS31FL3743B.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"IS31FL3743B/IS31FL3743B.d" -MT"IS31FL3743B/IS31FL3743B.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "IS31FL3743B/IS31FL3743B.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32g0xx_hal_msp.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32g0xx_hal_msp.d" -MT"Core/Src/stm32g0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32g0xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32g0xx_it.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32g0xx_it.d" -MT"Core/Src/stm32g0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32g0xx_it.o"
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_init':
+../IS31FL3743B/IS31FL3743B.c:97:2: warning: implicit declaration of function 'LedBlink' [-Wimplicit-function-declaration]
+   97 |  LedBlink(1);
+      |  ^~~~~~~~
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_Reset':
+../IS31FL3743B/IS31FL3743B.c:227:2: error: expected expression before '==' token
+  227 |  =======
+      |  ^~
+../IS31FL3743B/IS31FL3743B.c:241:1: error: version control conflict marker in file
+  241 | =======
+      | ^~~~~~~
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_Dumby':
+../IS31FL3743B/IS31FL3743B.c:258:9: error: redefinition of 'spiDataTx'
+  258 | uint8_t spiDataTx[3] = { 0x00, 0x00, 0x00 };
+      |         ^~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:253:9: note: previous definition of 'spiDataTx' was here
+  253 | uint8_t spiDataTx[3] = { 0x00, 0x00, 0x00 };
+      |         ^~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_SetFullColor':
+../IS31FL3743B/IS31FL3743B.c:282:1: error: expected declaration or statement at end of input
+  282 | }
+      | ^
+At top level:
+../IS31FL3743B/IS31FL3743B.c:273:6: warning: 'HAL_SPI_RxCpltCallback' defined but not used [-Wunused-function]
+  273 | void HAL_SPI_RxCpltCallback(SPI_HandleTypeDef *hspi) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:266:6: warning: 'HAL_SPI_TxCpltCallback' defined but not used [-Wunused-function]
+  266 | void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef *hspi) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:248:6: warning: 'IS31FL3743B_Dumby' defined but not used [-Wunused-function]
+  248 | void IS31FL3743B_Dumby(void) {
+      |      ^~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:221:6: warning: 'IS31FL3743B_Reset' defined but not used [-Wunused-function]
+  221 | void IS31FL3743B_Reset(void) {
+      |      ^~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:216:6: warning: 'IS31FL3743B_Breathe' defined but not used [-Wunused-function]
+  216 | void IS31FL3743B_Breathe(uint8_t color, int speed) {
+      |      ^~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:211:6: warning: 'IS31FL3743B_SetColumnColor' defined but not used [-Wunused-function]
+  211 | void IS31FL3743B_SetColumnColor(uint8_t row, uint8_t color) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:133:9: warning: 'IS31FL3743B_SetDotColor' defined but not used [-Wunused-function]
+  133 | uint8_t IS31FL3743B_SetDotColor(uint8_t led, uint8_t color, uint8_t intensity) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:122:10: warning: 'IS31FL3743B_TempStat' defined but not used [-Wunused-function]
+  122 | uint16_t IS31FL3743B_TempStat(void) {
+      |          ^~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:117:6: warning: 'IS31FL3743B_Glow' defined but not used [-Wunused-function]
+  117 | void IS31FL3743B_Glow(void) {
+      |      ^~~~~~~~~~~~~~~~
+make: *** [IS31FL3743B/subdir.mk:19: IS31FL3743B/IS31FL3743B.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+00:16:01 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../IS31FL3743B/IS31FL3743B.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"IS31FL3743B/IS31FL3743B.d" -MT"IS31FL3743B/IS31FL3743B.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "IS31FL3743B/IS31FL3743B.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32g0xx.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32g0xx.d" -MT"Core/Src/system_stm32g0xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32g0xx.o"
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_init':
+../IS31FL3743B/IS31FL3743B.c:97:2: warning: implicit declaration of function 'LedBlink' [-Wimplicit-function-declaration]
+   97 |  LedBlink(1);
+      |  ^~~~~~~~
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_Dumby':
+../IS31FL3743B/IS31FL3743B.c:254:11: error: redefinition of 'spiDataTx'
+  254 |   uint8_t spiDataTx[3] = { 0x00, 0x00, 0x00 };
+      |           ^~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:249:11: note: previous definition of 'spiDataTx' was here
+  249 |   uint8_t spiDataTx[3] = { 0x00, 0x00, 0x00 };
+      |           ^~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_SetFullColor':
+../IS31FL3743B/IS31FL3743B.c:276:2: error: expected declaration or statement at end of input
+  276 |  }
+      |  ^
+At top level:
+../IS31FL3743B/IS31FL3743B.c:269:7: warning: 'HAL_SPI_RxCpltCallback' defined but not used [-Wunused-function]
+  269 |  void HAL_SPI_RxCpltCallback(SPI_HandleTypeDef *hspi) {
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:262:7: warning: 'HAL_SPI_TxCpltCallback' defined but not used [-Wunused-function]
+  262 |  void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef *hspi) {
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:244:7: warning: 'IS31FL3743B_Dumby' defined but not used [-Wunused-function]
+  244 |  void IS31FL3743B_Dumby(void) {
+      |       ^~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:223:7: warning: 'IS31FL3743B_Reset' defined but not used [-Wunused-function]
+  223 |  void IS31FL3743B_Reset(void) {
+      |       ^~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:218:7: warning: 'IS31FL3743B_Breathe' defined but not used [-Wunused-function]
+  218 |  void IS31FL3743B_Breathe(uint8_t color, int speed) {
+      |       ^~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:213:7: warning: 'IS31FL3743B_SetColumnColor' defined but not used [-Wunused-function]
+  213 |  void IS31FL3743B_SetColumnColor(uint8_t row, uint8_t color) {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:133:10: warning: 'IS31FL3743B_SetDotColor' defined but not used [-Wunused-function]
+  133 |  uint8_t IS31FL3743B_SetDotColor(uint8_t led, uint8_t color,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:122:11: warning: 'IS31FL3743B_TempStat' defined but not used [-Wunused-function]
+  122 |  uint16_t IS31FL3743B_TempStat(void) {
+      |           ^~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:117:7: warning: 'IS31FL3743B_Glow' defined but not used [-Wunused-function]
+  117 |  void IS31FL3743B_Glow(void) {
+      |       ^~~~~~~~~~~~~~~~
+make: *** [IS31FL3743B/subdir.mk:19: IS31FL3743B/IS31FL3743B.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+00:16:21 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../IS31FL3743B/IS31FL3743B.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"IS31FL3743B/IS31FL3743B.d" -MT"IS31FL3743B/IS31FL3743B.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "IS31FL3743B/IS31FL3743B.o"
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_init':
+../IS31FL3743B/IS31FL3743B.c:97:2: warning: implicit declaration of function 'LedBlink' [-Wimplicit-function-declaration]
+   97 |  LedBlink(1);
+      |  ^~~~~~~~
+../IS31FL3743B/IS31FL3743B.c: At top level:
+../IS31FL3743B/IS31FL3743B.c:116:10: error: redefinition of 'IS31FL3743B_TempStat'
+  116 | uint16_t IS31FL3743B_TempStat(void) {
+      |          ^~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:101:10: note: previous definition of 'IS31FL3743B_TempStat' was here
+  101 | uint16_t IS31FL3743B_TempStat(void) {
+      |          ^~~~~~~~~~~~~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_Dumby':
+../IS31FL3743B/IS31FL3743B.c:246:10: error: redefinition of 'spiDataTx'
+  246 |  uint8_t spiDataTx[3] = { 0x00, 0x00, 0x00 };
+      |          ^~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:241:10: note: previous definition of 'spiDataTx' was here
+  241 |  uint8_t spiDataTx[3] = { 0x00, 0x00, 0x00 };
+      |          ^~~~~~~~~
+make: *** [IS31FL3743B/subdir.mk:19: IS31FL3743B/IS31FL3743B.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+00:16:42 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../IS31FL3743B/IS31FL3743B.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"IS31FL3743B/IS31FL3743B.d" -MT"IS31FL3743B/IS31FL3743B.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "IS31FL3743B/IS31FL3743B.o"
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_init':
+../IS31FL3743B/IS31FL3743B.c:97:2: warning: implicit declaration of function 'LedBlink' [-Wimplicit-function-declaration]
+   97 |  LedBlink(1);
+      |  ^~~~~~~~
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_Dumby':
+../IS31FL3743B/IS31FL3743B.c:220:10: error: redefinition of 'spiDataTx'
+  220 |  uint8_t spiDataTx[3] = { 0x00, 0x00, 0x00 };
+      |          ^~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:215:10: note: previous definition of 'spiDataTx' was here
+  215 |  uint8_t spiDataTx[3] = { 0x00, 0x00, 0x00 };
+      |          ^~~~~~~~~
+make: *** [IS31FL3743B/subdir.mk:19: IS31FL3743B/IS31FL3743B.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+00:17:07 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../IS31FL3743B/IS31FL3743B.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"IS31FL3743B/IS31FL3743B.d" -MT"IS31FL3743B/IS31FL3743B.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "IS31FL3743B/IS31FL3743B.o"
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_init':
+../IS31FL3743B/IS31FL3743B.c:97:2: warning: implicit declaration of function 'LedBlink' [-Wimplicit-function-declaration]
+   97 |  LedBlink(1);
+      |  ^~~~~~~~
+arm-none-eabi-gcc -o "LMP-01.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Rara_\Documents\GitHub\MyCustomLEDPCB\STM32 Firmware and API\LMP-01\STM32G031F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LMP-01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LMP-01.elf
+ 
+arm-none-eabi-size   LMP-01.elf 
+arm-none-eabi-objdump -h -S  LMP-01.elf  > "LMP-01.list"
+arm-none-eabi-objcopy  -O binary  LMP-01.elf  "LMP-01.bin"
+   text	   data	    bss	    dec	    hex	filename
+  13768	     20	   1996	  15784	   3da8	LMP-01.elf
+Finished building: default.size.stdout
+ 
+Finished building: LMP-01.bin
+ 
+Finished building: LMP-01.list
+ 
+00:17:18 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-size   LMP-01.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13768	     20	   1996	  15784	   3da8	LMP-01.elf
+Finished building: default.size.stdout
+ 
+00:18:11 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-size   LMP-01.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13768	     20	   1996	  15784	   3da8	LMP-01.elf
+Finished building: default.size.stdout
+ 
+00:23:19 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc -o "LMP-01.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Rara_\Documents\GitHub\MyCustomLEDPCB\STM32 Firmware and API\LMP-01\STM32G031F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LMP-01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LMP-01.elf
+ 
+arm-none-eabi-size   LMP-01.elf 
+arm-none-eabi-objdump -h -S  LMP-01.elf  > "LMP-01.list"
+arm-none-eabi-objcopy  -O binary  LMP-01.elf  "LMP-01.bin"
+   text	   data	    bss	    dec	    hex	filename
+  17916	    120	   2024	  20060	   4e5c	LMP-01.elf
+Finished building: default.size.stdout
+ 
+Finished building: LMP-01.bin
+ 
+Finished building: LMP-01.list
+ 

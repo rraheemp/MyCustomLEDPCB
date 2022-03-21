@@ -1,0 +1,105 @@
+18:11:54 **** Incremental Build of configuration Debug for project LP-B00 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:106:43: warning: passing argument 5 of 'HAL_I2C_Mem_Write' makes pointer from integer without a cast [-Wint-conversion]
+  106 |  HAL_I2C_Mem_Write(&hi2c1, 0x68, 0xCF, 1, 0xAE, 1, 100);
+      |                                           ^~~~
+      |                                           |
+      |                                           int
+In file included from ../Core/Inc/stm32g0xx_hal_conf.h:267,
+                 from ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_i2c.h:631:67: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'int'
+  631 |                                     uint16_t MemAddSize, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                          ~~~~~~~~~^~~~~
+../Core/Src/main.c:108:43: warning: passing argument 5 of 'HAL_I2C_Mem_Write' makes pointer from integer without a cast [-Wint-conversion]
+  108 |  HAL_I2C_Mem_Write(&hi2c1, 0x68, 0xA0, 1, 0x01, 1, 100);
+      |                                           ^~~~
+      |                                           |
+      |                                           int
+In file included from ../Core/Inc/stm32g0xx_hal_conf.h:267,
+                 from ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_i2c.h:631:67: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'int'
+  631 |                                     uint16_t MemAddSize, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                          ~~~~~~~~~^~~~~
+../Core/Src/main.c:110:43: warning: passing argument 5 of 'HAL_I2C_Mem_Write' makes pointer from integer without a cast [-Wint-conversion]
+  110 |  HAL_I2C_Mem_Write(&hi2c1, 0x68, 0xA1, 1, 0xf0, 1, 100);
+      |                                           ^~~~
+      |                                           |
+      |                                           int
+In file included from ../Core/Inc/stm32g0xx_hal_conf.h:267,
+                 from ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_i2c.h:631:67: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'int'
+  631 |                                     uint16_t MemAddSize, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                          ~~~~~~~~~^~~~~
+../Core/Src/main.c:111:43: warning: passing argument 5 of 'HAL_I2C_Mem_Write' makes pointer from integer without a cast [-Wint-conversion]
+  111 |  HAL_I2C_Mem_Write(&hi2c1, 0x68, 0x9F, 1, 0xf0, 1, 100);
+      |                                           ^~~~
+      |                                           |
+      |                                           int
+In file included from ../Core/Inc/stm32g0xx_hal_conf.h:267,
+                 from ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_i2c.h:631:67: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'int'
+  631 |                                     uint16_t MemAddSize, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                          ~~~~~~~~~^~~~~
+../Core/Src/main.c:113:43: warning: passing argument 5 of 'HAL_I2C_Mem_Write' makes pointer from integer without a cast [-Wint-conversion]
+  113 |  HAL_I2C_Mem_Write(&hi2c1, 0x68, 0x90, 1, 0xf0, 1, 100);
+      |                                           ^~~~
+      |                                           |
+      |                                           int
+In file included from ../Core/Inc/stm32g0xx_hal_conf.h:267,
+                 from ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_i2c.h:631:67: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'int'
+  631 |                                     uint16_t MemAddSize, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                          ~~~~~~~~~^~~~~
+../Core/Src/main.c:114:43: warning: passing argument 5 of 'HAL_I2C_Mem_Write' makes pointer from integer without a cast [-Wint-conversion]
+  114 |  HAL_I2C_Mem_Write(&hi2c1, 0x68, 0x8F, 1, 0xf0, 1, 100);
+      |                                           ^~~~
+      |                                           |
+      |                                           int
+In file included from ../Core/Inc/stm32g0xx_hal_conf.h:267,
+                 from ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_i2c.h:631:67: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'int'
+  631 |                                     uint16_t MemAddSize, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                          ~~~~~~~~~^~~~~
+../Core/Src/main.c:115:43: warning: passing argument 5 of 'HAL_I2C_Mem_Write' makes pointer from integer without a cast [-Wint-conversion]
+  115 |  HAL_I2C_Mem_Write(&hi2c1, 0x68, 0x8E, 1, 0xf0, 1, 100);
+      |                                           ^~~~
+      |                                           |
+      |                                           int
+In file included from ../Core/Inc/stm32g0xx_hal_conf.h:267,
+                 from ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_i2c.h:631:67: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'int'
+  631 |                                     uint16_t MemAddSize, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                          ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "LP-B00.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Rara_\Documents\GitHub\MyCustomLEDPCB\Software\LP-B00\STM32G031F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LP-B00.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LP-B00.elf
+ 
+arm-none-eabi-size   LP-B00.elf 
+arm-none-eabi-objdump -h -S  LP-B00.elf  > "LP-B00.list"
+arm-none-eabi-objcopy  -O binary  LP-B00.elf  "LP-B00.bin"
+   text	   data	    bss	    dec	    hex	filename
+  13388	     20	   1964	  15372	   3c0c	LP-B00.elf
+Finished building: default.size.stdout
+ 
+Finished building: LP-B00.bin
+ 
+Finished building: LP-B00.list
+ 
+
+18:11:55 Build Finished. 0 errors, 7 warnings. (took 1s.141ms)
+

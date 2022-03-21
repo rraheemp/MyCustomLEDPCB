@@ -1,0 +1,1778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\Rara_\Documents\GitHub\LED-Driver-Prototype\LED Driver Prototpye - V2\LED Driver Prototype V2.kicad_sch</source>
+    <date>2/24/2022 6:08:05 PM</date>
+    <tool>Eeschema (6.0.2)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>LED Driver Prototype</title>
+        <company>Rraheem Inc.</company>
+        <rev>2</rev>
+        <date>2022-02-22</date>
+        <source>LED Driver Prototype V2.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a6345e1e-3122-449b-95d2-36f2643fb1aa</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e3ba159d-1c8d-4463-8593-7c4527b943a6</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8ce0ad23-5de3-4939-a432-713fcc32cb84</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7848cd49-6c6b-4208-97a3-be0767996a4b</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>879dcbdf-30dc-4f81-b637-1fd4000b50f1</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eb9a0309-9ad7-454e-b1f6-0754790b2de6</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>4u7F</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b5f14956-a9e6-4c63-951c-e4703e1cd030</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c3b42dfd-ce96-4628-b908-9d21e2397845</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a55507b8-64ea-47c0-b4f1-e75d901b857a</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>68bbaad9-0495-40e1-9cc1-1c4b199e07fc</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a76216e2-49a7-42fa-8239-15cc17a7dc38</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0b776757-0812-4f87-85fb-3985605d70fb</tstamps>
+    </comp>
+    <comp ref="D5">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ec7a362d-ccd5-4652-892b-04cdc57a8dd6</tstamps>
+    </comp>
+    <comp ref="D6">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8547c470-2056-4a46-b330-e645a61412c0</tstamps>
+    </comp>
+    <comp ref="D7">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b6df556f-9f54-461c-9dbf-5b34cebcfcbb</tstamps>
+    </comp>
+    <comp ref="D8">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a94dab86-6b88-40fe-b0d4-a550ae94e171</tstamps>
+    </comp>
+    <comp ref="D9">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>94023aa7-3ab8-416e-9173-6cac98b0fd4c</tstamps>
+    </comp>
+    <comp ref="D10">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a92f16f5-33c5-49c0-9eed-b846aeee7c4e</tstamps>
+    </comp>
+    <comp ref="D11">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e2535fd5-abd2-4154-9a63-182d8cc0263b</tstamps>
+    </comp>
+    <comp ref="D12">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2a9e14da-471d-4b41-b500-6632c07da904</tstamps>
+    </comp>
+    <comp ref="D13">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d59364fd-206e-4784-8fb3-9dd3ac55dd82</tstamps>
+    </comp>
+    <comp ref="D14">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8864f8b8-0786-4e78-865a-3c3ad3fc50d7</tstamps>
+    </comp>
+    <comp ref="D15">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>503a1adc-52cc-499b-b000-3aa0e5308793</tstamps>
+    </comp>
+    <comp ref="D16">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bcfcffb5-48f4-441a-9f89-c86da16936f2</tstamps>
+    </comp>
+    <comp ref="D17">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>86fb422e-7dbb-44e7-a429-92554c37c3dc</tstamps>
+    </comp>
+    <comp ref="D18">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8eeac6da-94f0-42c4-b5d3-95a2644ef0b3</tstamps>
+    </comp>
+    <comp ref="D19">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9499cd71-3602-4d64-a44e-2b86888085a9</tstamps>
+    </comp>
+    <comp ref="D20">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>316273ef-d070-46c7-aeb2-c4d0d4639d03</tstamps>
+    </comp>
+    <comp ref="D21">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c42cbc90-1ff2-4b6e-82f5-71b33ad53e3a</tstamps>
+    </comp>
+    <comp ref="D22">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d0b07e9c-7f5e-48e4-8daf-e3e03dfed64a</tstamps>
+    </comp>
+    <comp ref="D23">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>95824847-09c9-456c-916c-aeda0028e6cc</tstamps>
+    </comp>
+    <comp ref="D24">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>df872789-c856-4a3e-8637-0138bd4750f0</tstamps>
+    </comp>
+    <comp ref="D25">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>91a4f423-8ed0-4778-91a4-e62052b90d0b</tstamps>
+    </comp>
+    <comp ref="D26">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>482ed3ff-fb58-4b81-bf68-84d9145645dd</tstamps>
+    </comp>
+    <comp ref="D27">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a8daf6cd-729c-4567-a17d-19c6b49321fd</tstamps>
+    </comp>
+    <comp ref="D28">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7bad3b6f-286c-47bf-906c-ae7a17cb0520</tstamps>
+    </comp>
+    <comp ref="D29">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>df83e58d-054c-4d49-b97a-d7d28e473ae2</tstamps>
+    </comp>
+    <comp ref="D30">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2ec3000b-af7a-42f3-8580-dddf8b89f64e</tstamps>
+    </comp>
+    <comp ref="D31">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3ce204e6-65bb-448b-90c0-70430c4086cc</tstamps>
+    </comp>
+    <comp ref="D32">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>256374c5-666e-4e7e-a927-9a07455d7947</tstamps>
+    </comp>
+    <comp ref="D33">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ce3a1c43-55ab-4048-8aec-470a158bae45</tstamps>
+    </comp>
+    <comp ref="D34">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6a757f16-99a1-47ef-bfb0-7c86e8e90c77</tstamps>
+    </comp>
+    <comp ref="D35">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>85ac2330-af05-4f8e-bb7c-a608ddccccb7</tstamps>
+    </comp>
+    <comp ref="D36">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>306a3376-339f-4959-bf3d-3dea18328557</tstamps>
+    </comp>
+    <comp ref="D37">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3b6a09c9-51e3-43f2-ad0f-b21cbbe34f36</tstamps>
+    </comp>
+    <comp ref="D38">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>090b3109-67c9-4dde-99e2-8e5ba6d31b72</tstamps>
+    </comp>
+    <comp ref="D39">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>03663788-b64d-4e0c-bad6-8b6cc547bc66</tstamps>
+    </comp>
+    <comp ref="D40">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aa504596-86b3-4b8a-bbeb-7426ac338b86</tstamps>
+    </comp>
+    <comp ref="D41">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f7796636-77ee-4fb4-96b5-c8ebbab11ea4</tstamps>
+    </comp>
+    <comp ref="D42">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4a38f133-eca6-48df-b9e7-50eff5258f51</tstamps>
+    </comp>
+    <comp ref="D43">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>69987ee9-8e6d-479a-a51c-90ac27e71797</tstamps>
+    </comp>
+    <comp ref="D44">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fa68b69c-5e25-4dd9-9518-0fa59da5b313</tstamps>
+    </comp>
+    <comp ref="D45">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>41fa4290-2735-4bba-a17a-b3996c896a30</tstamps>
+    </comp>
+    <comp ref="D46">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>11ddfba6-2312-4558-92be-61dca278c738</tstamps>
+    </comp>
+    <comp ref="D47">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6cdad009-db5e-4d0b-883b-40c34b6306fb</tstamps>
+    </comp>
+    <comp ref="D48">
+      <value>MHP3535RGBDT-S_-_PLCC_-_6</value>
+      <footprint>MEIHUA MHP3535RGBDT-S:MHP3535RGBDT-S</footprint>
+      <libsource lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>acca15fc-c403-4e1f-81bb-34605a3ddef4</tstamps>
+    </comp>
+    <comp ref="D67">
+      <value>LED_Small</value>
+      <footprint>Red LED 0603 - LTST-C191KRKT:LTST-C191KRKT</footprint>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>813ef21e-74e3-4161-8789-36ea572d843c</tstamps>
+    </comp>
+    <comp ref="D68">
+      <value>LED_Small</value>
+      <footprint>Green LED 0603 - LTST-C191KGKT:LTST-C191KGKT</footprint>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2dc87334-fd40-4e01-9fef-3fdc57ef4547</tstamps>
+    </comp>
+    <comp ref="FID1">
+      <value>Fiducial</value>
+      <footprint>Fiducial:Fiducial_0.5mm_Mask1.5mm</footprint>
+      <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3900a3b0-431b-4976-9497-7ceb8bad1232</tstamps>
+    </comp>
+    <comp ref="FID2">
+      <value>Fiducial</value>
+      <footprint>Fiducial:Fiducial_0.5mm_Mask1.5mm</footprint>
+      <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d7453f44-321c-4050-b18b-a12237a10415</tstamps>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1bc22e41-50b0-4676-86e9-a264ed264ea5</tstamps>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9c946c42-87b3-4cd8-b0a1-90fe0d9167f2</tstamps>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4032b56d-a53a-4bb5-ac3b-c59eec722e3e</tstamps>
+    </comp>
+    <comp ref="H4">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ca4b2a77-5a71-40ab-b178-0276e8dd2714</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>Screw_Terminal_01x02</value>
+      <footprint>TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal</footprint>
+      <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>672e1160-84ad-4792-a6c0-a6f4602019e6</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x02</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>65e2ebe7-f324-4f65-8910-9c60c23896e4</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>Conn_01x04</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e94f81c1-e581-4e89-89af-1d88fbe9c92f</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>Conn_01x05</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x05" description="Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>42d51d47-0e0f-419f-aac1-79acc4ce692e</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>Conn_01x05</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x05" description="Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1b915dd7-dc69-4de6-b1ab-d6e668d15ca2</tstamps>
+    </comp>
+    <comp ref="J6">
+      <value>Conn_01x05</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x05" description="Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b9c8afd1-d3c4-4bd9-bc6d-b2a6d923d7a4</tstamps>
+    </comp>
+    <comp ref="J7">
+      <value>Conn_01x03</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a68d7bf4-836d-4067-bd19-8ddb372afdda</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>20R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>52b97082-4f1f-41ed-b1bb-510445387b59</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>51R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1ecfb19a-a69e-40c3-97a8-5a92faf0622c</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>20R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>991007d9-5b93-41bd-9b2d-67d2fdd7676a</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>51R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>11abfc33-2dc0-49b7-a422-9d1b7c911be7</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>20R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cebfdec8-c9b7-4bba-8bde-07a16c0460f0</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>20R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>951cc5fc-ac0b-4820-b3c7-aa4bae93defa</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>51R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fe55d0af-9e3d-44b0-a017-d02aa2b5afd1</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>20R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0721f147-3ec4-43cf-9f27-709ea322fb67</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>560</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0eb948a8-05b7-4742-8179-6fa05bebcf8c</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>20R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>39e74c5c-b798-4d06-8858-8667944befeb</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>20R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dd10163f-a041-4080-beea-991cfe918582</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>51R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5b1d9dd6-e256-4086-9ce7-efa87daa8a99</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>20R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>93f0c4e8-9d67-428c-9664-8fa4164531ef</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>20R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d5d0ab72-d292-46f1-9956-293c20275329</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>51R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dc503621-5c1c-4419-bb7d-74fb82b8d8c5</tstamps>
+    </comp>
+    <comp ref="R16">
+      <value>20R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f3ba56bf-dc73-46ce-baf4-178b1da76b36</tstamps>
+    </comp>
+    <comp ref="R17">
+      <value>20R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>03b6e9ea-9341-46af-90c4-589edd9a5f09</tstamps>
+    </comp>
+    <comp ref="R18">
+      <value>51R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b6049450-f12f-4eca-adfb-237ec3a8e84f</tstamps>
+    </comp>
+    <comp ref="R19">
+      <value>20R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4845d0a5-f5d0-459e-9846-f2e1a3b4cd3d</tstamps>
+    </comp>
+    <comp ref="R20">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7264e754-94bf-45f8-8f07-c4ba0c236301</tstamps>
+    </comp>
+    <comp ref="R21">
+      <value>560</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>96752d91-b1d8-4e14-870e-215a5a87ee0e</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>NCP115ASN330T2G</value>
+      <footprint>NCP115ASN330T2G 3V3 LDO:NCP115ASN330T2G</footprint>
+      <libsource lib="NCP115ASN330T2G 3V3 LDO" part="NCP115ASN330T2G" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b0dd949d-1a40-46a3-ae83-8c0ce4eec054</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>IS31FL3743B-QULS4-TR</value>
+      <footprint>IS31FL3743B:IS31FL3743B-QULS4-TR</footprint>
+      <libsource lib="IS31FL3743B" part="IS31FL3743B-QULS4-TR" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>25f32c36-95ec-4e9c-93af-af23ddfeee4c</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>STM32G031F6P6TR</value>
+      <footprint>STM32G031F6P6:STM32G031F6P6</footprint>
+      <libsource lib="STM32G031F8P6TR" part="STM32G031F6P6TR" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LED Driver Prototype V2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ecf43021-77f3-4c1d-92ae-46b212f876f7</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Screw_Terminal_01x02">
+      <description>Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TerminalBlock*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Screw_Terminal_01x02</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x03">
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x04">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x05">
+      <description>Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x05</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED_Small">
+      <description>Light emitting diode, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Small_US">
+      <description>Resistor, small US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small_US</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="IS31FL3743B" part="IS31FL3743B-QULS4-TR">
+      <footprints>
+        <fp>UQFN-40_ISI</fp>
+        <fp>UQFN-40_ISI-M</fp>
+        <fp>UQFN-40_ISI-L</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U?</field>
+        <field name="Value">IS31FL3743B-QULS4-TR</field>
+        <field name="Footprint">UQFN-40_ISI</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SW8" type="bidirectional"/>
+        <pin num="2" name="SW6" type="bidirectional"/>
+        <pin num="3" name="SW4" type="bidirectional"/>
+        <pin num="4" name="SW2" type="bidirectional"/>
+        <pin num="5" name="PVCC" type="power_in"/>
+        <pin num="6" name="SW1" type="bidirectional"/>
+        <pin num="7" name="SW3" type="bidirectional"/>
+        <pin num="8" name="SW5" type="bidirectional"/>
+        <pin num="9" name="SW7" type="bidirectional"/>
+        <pin num="10" name="SW9" type="bidirectional"/>
+        <pin num="11" name="SW11" type="bidirectional"/>
+        <pin num="12" name="CS18" type="bidirectional"/>
+        <pin num="13" name="CS17" type="bidirectional"/>
+        <pin num="14" name="CS16" type="bidirectional"/>
+        <pin num="15" name="CS15" type="bidirectional"/>
+        <pin num="16" name="PGND" type="power_in"/>
+        <pin num="17" name="CS14" type="bidirectional"/>
+        <pin num="18" name="CS13" type="bidirectional"/>
+        <pin num="19" name="CS12" type="bidirectional"/>
+        <pin num="20" name="CS11" type="bidirectional"/>
+        <pin num="21" name="CS10" type="bidirectional"/>
+        <pin num="22" name="VCC" type="power_in"/>
+        <pin num="23" name="GND" type="power_in"/>
+        <pin num="24" name="MISO" type="output"/>
+        <pin num="25" name="CS" type="unspecified"/>
+        <pin num="26" name="SDB" type="unspecified"/>
+        <pin num="27" name="SCK" type="input"/>
+        <pin num="28" name="MOSI" type="input"/>
+        <pin num="29" name="R_EXT" type="unspecified"/>
+        <pin num="30" name="SYNC" type="unspecified"/>
+        <pin num="31" name="CS9" type="bidirectional"/>
+        <pin num="32" name="CS8" type="bidirectional"/>
+        <pin num="33" name="CS7" type="bidirectional"/>
+        <pin num="34" name="CS6" type="bidirectional"/>
+        <pin num="35" name="CS5" type="bidirectional"/>
+        <pin num="36" name="CS4" type="bidirectional"/>
+        <pin num="37" name="CS3" type="bidirectional"/>
+        <pin num="38" name="CS2" type="bidirectional"/>
+        <pin num="39" name="CS1" type="bidirectional"/>
+        <pin num="40" name="SW10" type="bidirectional"/>
+        <pin num="41" name="HTAB" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="MHP3535RGBDT-S - PLCC-6" part="MHP3535RGBDT-S_-_PLCC_-_6">
+      <fields>
+        <field name="Reference">D?</field>
+        <field name="Value">MHP3535RGBDT-S_-_PLCC_-_6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B-" type="bidirectional"/>
+        <pin num="2" name="G-" type="bidirectional"/>
+        <pin num="3" name="R-" type="bidirectional"/>
+        <pin num="4" name="R+" type="bidirectional"/>
+        <pin num="5" name="G+" type="bidirectional"/>
+        <pin num="6" name="B+" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="Fiducial">
+      <description>Fiducial Marker</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Fiducial*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">FID</field>
+        <field name="Value">Fiducial</field>
+        <field name="Datasheet">~</field>
+      </fields>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+        <field name="Datasheet">~</field>
+      </fields>
+    </libpart>
+    <libpart lib="NCP115ASN330T2G 3V3 LDO" part="NCP115ASN330T2G">
+      <footprints>
+        <fp>TSOP-5-483-N_ONS</fp>
+        <fp>TSOP-5-483-N_ONS-M</fp>
+        <fp>TSOP-5-483-N_ONS-L</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">NCP115ASN330T2G</field>
+        <field name="Footprint">TSOP-5-483-N_ONS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="EN" type="unspecified"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="OUT" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="STM32G031F8P6TR" part="STM32G031F6P6TR">
+      <fields>
+        <field name="Reference">U?</field>
+        <field name="Value">STM32G031F6P6TR</field>
+        <field name="Footprint">Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PB7/PB8" type="bidirectional"/>
+        <pin num="2" name="PB9/PC14" type="bidirectional"/>
+        <pin num="3" name="PC15" type="bidirectional"/>
+        <pin num="4" name="VDD/VDDA" type="power_in"/>
+        <pin num="5" name="VSS/VSSA" type="power_in"/>
+        <pin num="6" name="NRST" type="bidirectional"/>
+        <pin num="7" name="PA0" type="bidirectional"/>
+        <pin num="8" name="PA1" type="bidirectional"/>
+        <pin num="9" name="PA2" type="bidirectional"/>
+        <pin num="10" name="PA3" type="bidirectional"/>
+        <pin num="11" name="PA4" type="bidirectional"/>
+        <pin num="12" name="PA5" type="bidirectional"/>
+        <pin num="13" name="PA6" type="bidirectional"/>
+        <pin num="14" name="PA7" type="bidirectional"/>
+        <pin num="15" name="PB0/PB1" type="bidirectional"/>
+        <pin num="16" name="PA11" type="bidirectional"/>
+        <pin num="17" name="PA12" type="bidirectional"/>
+        <pin num="18" name="PA13" type="bidirectional"/>
+        <pin num="19" name="PA15/PA14" type="bidirectional"/>
+        <pin num="20" name="PB3/PB4" type="bidirectional"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\6.0.2\share\kicad\symbols\/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>C:\Program Files\KiCad\6.0.2\share\kicad\symbols\/Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\6.0.2\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="IS31FL3743B">
+      <uri>C:\Users\Rara_\Documents\KiCad Custom Components/PMICs/LED DRIVERS/IS31FL3743B/IS31FL3743B.kicad_sym</uri>
+    </library>
+    <library logical="MHP3535RGBDT-S - PLCC-6">
+      <uri>C:\Users\Rara_\Documents\KiCad Custom Components/LEDS/MEIHUA MHP3535RGBDT-S/MHP3535RGBDT-S - PLCC-6.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>C:\Program Files\KiCad\6.0.2\share\kicad\symbols\/Mechanical.kicad_sym</uri>
+    </library>
+    <library logical="NCP115ASN330T2G 3V3 LDO">
+      <uri>C:/Users/Rara_/Documents/KiCad Custom Components/LDOs/NCP115ASN330T2G 3V3 LDO/NCP115ASN330T2G 3V3 LDO.kicad_sym</uri>
+    </library>
+    <library logical="STM32G031F8P6TR">
+      <uri>C:/Users/Rara_/Documents/KiCad/6.0/symbols/STM32G031F8P6TR.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3">
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="J5" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="OUT" pintype="output"/>
+      <node ref="U3" pin="4" pinfunction="VDD/VDDA" pintype="power_in"/>
+    </net>
+    <net code="2" name="+5V">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="IN" pintype="input"/>
+      <node ref="U1" pin="3" pinfunction="EN" pintype="unspecified"/>
+      <node ref="U2" pin="22" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U2" pin="5" pinfunction="PVCC" pintype="power_in"/>
+    </net>
+    <net code="3" name="/CS1">
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="U2" pin="39" pinfunction="CS1" pintype="bidirectional"/>
+    </net>
+    <net code="4" name="/CS2">
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="U2" pin="38" pinfunction="CS2" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="/CS3">
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="U2" pin="37" pinfunction="CS3" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="/CS4">
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="U2" pin="36" pinfunction="CS4" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="/CS5">
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="U2" pin="35" pinfunction="CS5" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="/CS6">
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="U2" pin="34" pinfunction="CS6" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="/CS7">
+      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="U2" pin="33" pinfunction="CS7" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="/CS8">
+      <node ref="R17" pin="1" pintype="passive"/>
+      <node ref="U2" pin="32" pinfunction="CS8" pintype="bidirectional"/>
+    </net>
+    <net code="11" name="/CS9">
+      <node ref="R18" pin="1" pintype="passive"/>
+      <node ref="U2" pin="31" pinfunction="CS9" pintype="bidirectional"/>
+    </net>
+    <net code="12" name="/CS10">
+      <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="U2" pin="21" pinfunction="CS10" pintype="bidirectional"/>
+    </net>
+    <net code="13" name="/CS11">
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="U2" pin="20" pinfunction="CS11" pintype="bidirectional"/>
+    </net>
+    <net code="14" name="/CS12">
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="U2" pin="19" pinfunction="CS12" pintype="bidirectional"/>
+    </net>
+    <net code="15" name="/CS13">
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U2" pin="18" pinfunction="CS13" pintype="bidirectional"/>
+    </net>
+    <net code="16" name="/CS14">
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U2" pin="17" pinfunction="CS14" pintype="bidirectional"/>
+    </net>
+    <net code="17" name="/CS15">
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="U2" pin="15" pinfunction="CS15" pintype="bidirectional"/>
+    </net>
+    <net code="18" name="/CS16">
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U2" pin="14" pinfunction="CS16" pintype="bidirectional"/>
+    </net>
+    <net code="19" name="/CS17">
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="U2" pin="13" pinfunction="CS17" pintype="bidirectional"/>
+    </net>
+    <net code="20" name="/CS18">
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U2" pin="12" pinfunction="CS18" pintype="bidirectional"/>
+    </net>
+    <net code="21" name="/ISET">
+      <node ref="R20" pin="1" pintype="passive"/>
+      <node ref="U2" pin="29" pinfunction="R_EXT" pintype="unspecified"/>
+    </net>
+    <net code="22" name="/LD1">
+      <node ref="R21" pin="2" pintype="passive"/>
+      <node ref="U3" pin="20" pinfunction="PB3/PB4" pintype="bidirectional"/>
+    </net>
+    <net code="23" name="/PA1">
+      <node ref="J4" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="U3" pin="8" pinfunction="PA1" pintype="bidirectional"/>
+    </net>
+    <net code="24" name="/PA12">
+      <node ref="J4" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="U3" pin="17" pinfunction="PA12" pintype="bidirectional"/>
+    </net>
+    <net code="25" name="/PB9{slash}PC14">
+      <node ref="J4" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="PB9/PC14" pintype="bidirectional"/>
+    </net>
+    <net code="26" name="/PC15">
+      <node ref="J4" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="PC15" pintype="bidirectional"/>
+    </net>
+    <net code="27" name="/UART_RX">
+      <node ref="J7" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U3" pin="10" pinfunction="PA3" pintype="bidirectional"/>
+    </net>
+    <net code="28" name="/UART_TX">
+      <node ref="J7" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="U3" pin="9" pinfunction="PA2" pintype="bidirectional"/>
+    </net>
+    <net code="29" name="2SPI_MOSI">
+      <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="PB7/PB8" pintype="bidirectional"/>
+    </net>
+    <net code="30" name="2SPI_NSS">
+      <node ref="J3" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="U3" pin="15" pinfunction="PB0/PB1" pintype="bidirectional"/>
+    </net>
+    <net code="31" name="2SPI_SCK">
+      <node ref="J3" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="U3" pin="7" pinfunction="PA0" pintype="bidirectional"/>
+    </net>
+    <net code="32" name="B-_1">
+      <node ref="D1" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D13" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D19" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D25" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D31" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D37" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D43" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D7" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+    </net>
+    <net code="33" name="B-_2">
+      <node ref="D14" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D2" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D20" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D26" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D32" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D38" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D44" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D8" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+    </net>
+    <net code="34" name="B-_3">
+      <node ref="D15" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D21" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D27" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D3" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D33" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D39" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D45" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D9" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+    </net>
+    <net code="35" name="B-_4">
+      <node ref="D10" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D16" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D22" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D28" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D34" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D4" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D40" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D46" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="R19" pin="2" pintype="passive"/>
+    </net>
+    <net code="36" name="B-_5">
+      <node ref="D11" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D17" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D23" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D29" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D35" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D41" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D47" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D5" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+    </net>
+    <net code="37" name="B-_6">
+      <node ref="D12" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D18" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D24" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D30" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D36" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D42" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D48" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="D6" pin="1" pinfunction="B-" pintype="bidirectional"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+    </net>
+    <net code="38" name="G-_1">
+      <node ref="D1" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D13" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D19" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D25" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D31" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D37" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D43" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D7" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+    </net>
+    <net code="39" name="G-_2">
+      <node ref="D14" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D2" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D20" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D26" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D32" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D38" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D44" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D8" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+    </net>
+    <net code="40" name="G-_3">
+      <node ref="D15" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D21" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D27" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D3" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D33" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D39" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D45" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D9" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="R17" pin="2" pintype="passive"/>
+    </net>
+    <net code="41" name="G-_4">
+      <node ref="D10" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D16" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D22" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D28" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D34" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D4" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D40" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D46" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+    </net>
+    <net code="42" name="G-_5">
+      <node ref="D11" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D17" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D23" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D29" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D35" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D41" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D47" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D5" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+    </net>
+    <net code="43" name="G-_6">
+      <node ref="D12" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D18" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D24" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D30" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D36" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D42" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D48" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="D6" pin="2" pinfunction="G-" pintype="bidirectional"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+    </net>
+    <net code="44" name="GND">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="D67" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D68" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J4" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J5" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J6" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J7" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R20" pin="2" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="16" pinfunction="PGND" pintype="power_in"/>
+      <node ref="U2" pin="23" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="41" pinfunction="HTAB" pintype="power_in"/>
+      <node ref="U3" pin="5" pinfunction="VSS/VSSA" pintype="power_in"/>
+    </net>
+    <net code="45" name="NRST">
+      <node ref="J5" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="U3" pin="6" pinfunction="NRST" pintype="bidirectional"/>
+    </net>
+    <net code="46" name="Net-(D67-Pad2)">
+      <node ref="D67" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+    </net>
+    <net code="47" name="Net-(D68-Pad2)">
+      <node ref="D68" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R21" pin="1" pintype="passive"/>
+    </net>
+    <net code="48" name="R-_1">
+      <node ref="D1" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D13" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D19" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D25" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D31" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D37" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D43" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D7" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+    </net>
+    <net code="49" name="R-_2">
+      <node ref="D14" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D2" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D20" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D26" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D32" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D38" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D44" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D8" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+    </net>
+    <net code="50" name="R-_3">
+      <node ref="D15" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D21" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D27" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D3" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D33" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D39" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D45" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D9" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="R18" pin="2" pintype="passive"/>
+    </net>
+    <net code="51" name="R-_4">
+      <node ref="D10" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D16" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D22" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D28" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D34" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D4" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D40" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D46" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+    </net>
+    <net code="52" name="R-_5">
+      <node ref="D11" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D17" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D23" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D29" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D35" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D41" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D47" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D5" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+    </net>
+    <net code="53" name="R-_6">
+      <node ref="D12" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D18" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D24" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D30" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D36" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D42" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D48" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="D6" pin="3" pinfunction="R-" pintype="bidirectional"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+    </net>
+    <net code="54" name="SDB">
+      <node ref="U2" pin="26" pinfunction="SDB" pintype="unspecified"/>
+      <node ref="U3" pin="16" pinfunction="PA11" pintype="bidirectional"/>
+    </net>
+    <net code="55" name="SPI_MISO">
+      <node ref="J6" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="U2" pin="24" pinfunction="MISO" pintype="output"/>
+      <node ref="U3" pin="13" pinfunction="PA6" pintype="bidirectional"/>
+    </net>
+    <net code="56" name="SPI_MOSI">
+      <node ref="J6" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="U2" pin="28" pinfunction="MOSI" pintype="input"/>
+      <node ref="U3" pin="14" pinfunction="PA7" pintype="bidirectional"/>
+    </net>
+    <net code="57" name="SPI_NSS">
+      <node ref="J6" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U2" pin="25" pinfunction="CS" pintype="unspecified"/>
+      <node ref="U3" pin="11" pinfunction="PA4" pintype="bidirectional"/>
+    </net>
+    <net code="58" name="SPI_SCK">
+      <node ref="J6" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="U2" pin="27" pinfunction="SCK" pintype="input"/>
+      <node ref="U3" pin="12" pinfunction="PA5" pintype="bidirectional"/>
+    </net>
+    <net code="59" name="SW1">
+      <node ref="D1" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D1" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D1" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D2" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D2" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D2" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D3" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D3" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D3" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D4" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D4" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D4" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D5" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D5" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D5" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D6" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D6" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D6" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="U2" pin="6" pinfunction="SW1" pintype="bidirectional"/>
+    </net>
+    <net code="60" name="SW2">
+      <node ref="D10" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D10" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D10" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D11" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D11" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D11" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D12" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D12" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D12" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D7" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D7" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D7" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D8" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D8" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D8" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D9" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D9" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D9" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="U2" pin="4" pinfunction="SW2" pintype="bidirectional"/>
+    </net>
+    <net code="61" name="SW3">
+      <node ref="D13" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D13" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D13" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D14" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D14" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D14" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D15" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D15" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D15" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D16" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D16" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D16" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D17" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D17" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D17" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D18" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D18" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D18" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="U2" pin="7" pinfunction="SW3" pintype="bidirectional"/>
+    </net>
+    <net code="62" name="SW4">
+      <node ref="D19" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D19" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D19" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D20" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D20" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D20" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D21" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D21" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D21" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D22" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D22" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D22" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D23" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D23" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D23" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D24" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D24" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D24" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="U2" pin="3" pinfunction="SW4" pintype="bidirectional"/>
+    </net>
+    <net code="63" name="SW5">
+      <node ref="D25" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D25" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D25" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D26" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D26" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D26" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D27" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D27" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D27" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D28" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D28" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D28" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D29" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D29" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D29" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D30" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D30" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D30" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="U2" pin="8" pinfunction="SW5" pintype="bidirectional"/>
+    </net>
+    <net code="64" name="SW6">
+      <node ref="D31" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D31" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D31" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D32" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D32" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D32" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D33" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D33" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D33" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D34" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D34" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D34" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D35" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D35" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D35" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D36" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D36" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D36" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="U2" pin="2" pinfunction="SW6" pintype="bidirectional"/>
+    </net>
+    <net code="65" name="SW7">
+      <node ref="D37" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D37" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D37" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D38" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D38" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D38" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D39" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D39" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D39" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D40" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D40" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D40" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D41" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D41" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D41" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D42" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D42" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D42" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="U2" pin="9" pinfunction="SW7" pintype="bidirectional"/>
+    </net>
+    <net code="66" name="SW8">
+      <node ref="D43" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D43" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D43" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D44" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D44" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D44" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D45" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D45" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D45" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D46" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D46" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D46" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D47" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D47" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D47" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="D48" pin="4" pinfunction="R+" pintype="bidirectional"/>
+      <node ref="D48" pin="5" pinfunction="G+" pintype="bidirectional"/>
+      <node ref="D48" pin="6" pinfunction="B+" pintype="bidirectional"/>
+      <node ref="U2" pin="1" pinfunction="SW8" pintype="bidirectional"/>
+    </net>
+    <net code="67" name="SWCLK">
+      <node ref="J5" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="U3" pin="19" pinfunction="PA15/PA14" pintype="bidirectional"/>
+    </net>
+    <net code="68" name="SWDIO">
+      <node ref="J5" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="U3" pin="18" pinfunction="PA13" pintype="bidirectional"/>
+    </net>
+    <net code="69" name="unconnected-(U1-Pad4)">
+      <node ref="U1" pin="4" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="70" name="unconnected-(U2-Pad10)">
+      <node ref="U2" pin="10" pinfunction="SW9" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="71" name="unconnected-(U2-Pad11)">
+      <node ref="U2" pin="11" pinfunction="SW11" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="72" name="unconnected-(U2-Pad30)">
+      <node ref="U2" pin="30" pinfunction="SYNC" pintype="unspecified+no_connect"/>
+    </net>
+    <net code="73" name="unconnected-(U2-Pad40)">
+      <node ref="U2" pin="40" pinfunction="SW10" pintype="bidirectional+no_connect"/>
+    </net>
+  </nets>
+</export>

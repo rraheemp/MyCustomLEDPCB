@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+<<<<<<< Updated upstream
+	<section name="org.eclipse.cdt.dsf.debug.internal.ui.ExpressionInformationControlCreator$ExpressionInformationControl">
+		<item key="WIDTH" value="626"/>
+		<item key="HEIGHT" value="278"/>
+		<item key="SashWeightTree" value="500"/>
+		<item key="SashWeightDetails" value="500"/>
+	</section>
+=======
+<<<<<<< Updated upstream
+=======
+	<section name="org.eclipse.cdt.dsf.debug.internal.ui.ExpressionInformationControlCreator$ExpressionInformationControl">
+		<item key="WIDTH" value="686"/>
+		<item key="HEIGHT" value="533"/>
+		<item key="SashWeightTree" value="500"/>
+		<item key="SashWeightDetails" value="500"/>
+	</section>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+</section>

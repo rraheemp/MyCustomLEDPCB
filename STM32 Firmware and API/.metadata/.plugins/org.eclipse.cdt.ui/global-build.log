@@ -697,3 +697,559 @@ Finished building: LMP-01.bin
  
 Finished building: LMP-01.list
  
+22:01:03 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-size   LMP-01.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17916	    120	   2024	  20060	   4e5c	LMP-01.elf
+Finished building: default.size.stdout
+ 
+22:04:39 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-size   LMP-01.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17916	    120	   2024	  20060	   4e5c	LMP-01.elf
+Finished building: default.size.stdout
+ 
+22:07:42 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LMP-01.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Rara_\Documents\GitHub\MyCustomLEDPCB\STM32 Firmware and API\LMP-01\STM32G031F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LMP-01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LMP-01.elf
+ 
+arm-none-eabi-size   LMP-01.elf 
+arm-none-eabi-objdump -h -S  LMP-01.elf  > "LMP-01.list"
+arm-none-eabi-objcopy  -O binary  LMP-01.elf  "LMP-01.bin"
+   text	   data	    bss	    dec	    hex	filename
+  18036	    120	   2024	  20180	   4ed4	LMP-01.elf
+Finished building: default.size.stdout
+ 
+Finished building: LMP-01.bin
+ 
+Finished building: LMP-01.list
+ 
+23:08:31 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../MyDelay/MyDelay.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MyDelay/MyDelay.d" -MT"MyDelay/MyDelay.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MyDelay/MyDelay.o"
+arm-none-eabi-gcc "../IS31FL3743B/IS31FL3743B.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"IS31FL3743B/IS31FL3743B.d" -MT"IS31FL3743B/IS31FL3743B.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "IS31FL3743B/IS31FL3743B.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.o"
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_init':
+../IS31FL3743B/IS31FL3743B.c:97:2: warning: implicit declaration of function 'LedBlink' [-Wimplicit-function-declaration]
+   97 |  LedBlink(1);
+      |  ^~~~~~~~
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.d" -MT"Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32g0xx_hal_msp.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32g0xx_hal_msp.d" -MT"Core/Src/stm32g0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32g0xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32g0xx_it.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32g0xx_it.d" -MT"Core/Src/stm32g0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32g0xx_it.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32g0xx.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32g0xx.d" -MT"Core/Src/system_stm32g0xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32g0xx.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:119:3: warning: implicit declaration of function 'MyDelay'; did you mean 'MyDelay_ms'? [-Wimplicit-function-declaration]
+  119 |   MyDelay(250);
+      |   ^~~~~~~
+      |   MyDelay_ms
+arm-none-eabi-gcc -o "LMP-01.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Rara_\Documents\GitHub\MyCustomLEDPCB\STM32 Firmware and API\LMP-01\STM32G031F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LMP-01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.8.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `main':
+C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/Debug/../Core/Src/main.c:119: undefined reference to `MyDelay'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: LMP-01.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+23:09:00 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc -o "LMP-01.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Rara_\Documents\GitHub\MyCustomLEDPCB\STM32 Firmware and API\LMP-01\STM32G031F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LMP-01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.8.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `main':
+C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/Debug/../Core/Src/main.c:119: undefined reference to `MyDelay'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: LMP-01.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+23:09:25 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc -o "LMP-01.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Rara_\Documents\GitHub\MyCustomLEDPCB\STM32 Firmware and API\LMP-01\STM32G031F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LMP-01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.8.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `main':
+C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/Debug/../Core/Src/main.c:119: undefined reference to `MyDelay'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: LMP-01.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+23:10:04 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LMP-01.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Rara_\Documents\GitHub\MyCustomLEDPCB\STM32 Firmware and API\LMP-01\STM32G031F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LMP-01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LMP-01.elf
+ 
+arm-none-eabi-size   LMP-01.elf 
+arm-none-eabi-objdump -h -S  LMP-01.elf  > "LMP-01.list"
+arm-none-eabi-objcopy  -O binary  LMP-01.elf  "LMP-01.bin"
+   text	   data	    bss	    dec	    hex	filename
+  13788	     20	   1996	  15804	   3dbc	LMP-01.elf
+Finished building: default.size.stdout
+ 
+Finished building: LMP-01.bin
+ 
+Finished building: LMP-01.list
+ 
+23:10:28 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-size   LMP-01.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13788	     20	   1996	  15804	   3dbc	LMP-01.elf
+Finished building: default.size.stdout
+ 
+00:44:02 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-size   LMP-01.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13788	     20	   1996	  15804	   3dbc	LMP-01.elf
+Finished building: default.size.stdout
+ 
+00:45:10 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-size   LMP-01.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13788	     20	   1996	  15804	   3dbc	LMP-01.elf
+Finished building: default.size.stdout
+ 
+00:46:10 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-size   LMP-01.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13788	     20	   1996	  15804	   3dbc	LMP-01.elf
+Finished building: default.size.stdout
+ 
+00:46:21 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-size   LMP-01.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13788	     20	   1996	  15804	   3dbc	LMP-01.elf
+Finished building: default.size.stdout
+ 
+00:46:40 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-size   LMP-01.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13788	     20	   1996	  15804	   3dbc	LMP-01.elf
+Finished building: default.size.stdout
+ 
+00:47:41 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-size   LMP-01.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13788	     20	   1996	  15804	   3dbc	LMP-01.elf
+Finished building: default.size.stdout
+ 
+00:48:00 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-size   LMP-01.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13788	     20	   1996	  15804	   3dbc	LMP-01.elf
+Finished building: default.size.stdout
+ 
+00:49:25 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-size   LMP-01.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13788	     20	   1996	  15804	   3dbc	LMP-01.elf
+Finished building: default.size.stdout
+ 
+00:57:47 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:126:38: error: 'off' undeclared (first use in this function); did you mean 'Off'?
+  126 |    IS31FL3743B_SetDotColor(x, White, off);
+      |                                      ^~~
+      |                                      Off
+../Core/Src/main.c:126:38: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:106:14: warning: unused variable 'flag2' [-Wunused-variable]
+  106 |  bool flag1, flag2 = 0;
+      |              ^~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+00:58:30 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../IS31FL3743B/IS31FL3743B.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"IS31FL3743B/IS31FL3743B.d" -MT"IS31FL3743B/IS31FL3743B.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "IS31FL3743B/IS31FL3743B.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_init':
+../IS31FL3743B/IS31FL3743B.c:97:2: warning: implicit declaration of function 'LedBlink' [-Wimplicit-function-declaration]
+   97 |  LedBlink(1);
+      |  ^~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:106:14: warning: unused variable 'flag2' [-Wunused-variable]
+  106 |  bool flag1, flag2 = 0;
+      |              ^~~~~
+arm-none-eabi-gcc -o "LMP-01.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Rara_\Documents\GitHub\MyCustomLEDPCB\STM32 Firmware and API\LMP-01\STM32G031F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LMP-01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LMP-01.elf
+ 
+arm-none-eabi-size   LMP-01.elf 
+arm-none-eabi-objdump -h -S  LMP-01.elf  > "LMP-01.list"
+arm-none-eabi-objcopy  -O binary  LMP-01.elf  "LMP-01.bin"
+   text	   data	    bss	    dec	    hex	filename
+  13896	     20	   1996	  15912	   3e28	LMP-01.elf
+Finished building: default.size.stdout
+ 
+Finished building: LMP-01.bin
+ 
+Finished building: LMP-01.list
+ 
+00:58:40 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LMP-01.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Rara_\Documents\GitHub\MyCustomLEDPCB\STM32 Firmware and API\LMP-01\STM32G031F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LMP-01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LMP-01.elf
+ 
+arm-none-eabi-size   LMP-01.elf 
+arm-none-eabi-objdump -h -S  LMP-01.elf  > "LMP-01.list"
+arm-none-eabi-objcopy  -O binary  LMP-01.elf  "LMP-01.bin"
+   text	   data	    bss	    dec	    hex	filename
+  13896	     20	   1996	  15912	   3e28	LMP-01.elf
+Finished building: default.size.stdout
+ 
+Finished building: LMP-01.bin
+ 
+Finished building: LMP-01.list
+ 
+00:58:49 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-size   LMP-01.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13896	     20	   1996	  15912	   3e28	LMP-01.elf
+Finished building: default.size.stdout
+ 
+01:01:43 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:133:16: warning: comparison of constant '2' with boolean expression is always false [-Wbool-compare]
+  133 |   while (flag1 == 2) {
+      |                ^~
+../Core/Src/main.c:142:16: warning: comparison of constant '3' with boolean expression is always false [-Wbool-compare]
+  142 |   while (flag1 == 3) {
+      |                ^~
+../Core/Src/main.c:151:16: warning: comparison of constant '4' with boolean expression is always false [-Wbool-compare]
+  151 |   while (flag1 == 4) {
+      |                ^~
+../Core/Src/main.c:160:16: warning: comparison of constant '5' with boolean expression is always false [-Wbool-compare]
+  160 |   while (flag1 == 5) {
+      |                ^~
+arm-none-eabi-gcc -o "LMP-01.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Rara_\Documents\GitHub\MyCustomLEDPCB\STM32 Firmware and API\LMP-01\STM32G031F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LMP-01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LMP-01.elf
+ 
+arm-none-eabi-size   LMP-01.elf 
+arm-none-eabi-objdump -h -S  LMP-01.elf  > "LMP-01.list"
+arm-none-eabi-objcopy  -O binary  LMP-01.elf  "LMP-01.bin"
+   text	   data	    bss	    dec	    hex	filename
+  13904	     20	   1996	  15920	   3e30	LMP-01.elf
+Finished building: default.size.stdout
+ 
+Finished building: LMP-01.bin
+ 
+Finished building: LMP-01.list
+ 
+01:03:08 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:133:16: warning: comparison of constant '2' with boolean expression is always false [-Wbool-compare]
+  133 |   while (flag1 == 2) {
+      |                ^~
+../Core/Src/main.c:142:16: warning: comparison of constant '3' with boolean expression is always false [-Wbool-compare]
+  142 |   while (flag1 == 3) {
+      |                ^~
+../Core/Src/main.c:151:16: warning: comparison of constant '4' with boolean expression is always false [-Wbool-compare]
+  151 |   while (flag1 == 4) {
+      |                ^~
+../Core/Src/main.c:160:16: warning: comparison of constant '5' with boolean expression is always false [-Wbool-compare]
+  160 |   while (flag1 == 5) {
+      |                ^~
+arm-none-eabi-gcc -o "LMP-01.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Rara_\Documents\GitHub\MyCustomLEDPCB\STM32 Firmware and API\LMP-01\STM32G031F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LMP-01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LMP-01.elf
+ 
+arm-none-eabi-size   LMP-01.elf 
+arm-none-eabi-objdump -h -S  LMP-01.elf  > "LMP-01.list"
+arm-none-eabi-objcopy  -O binary  LMP-01.elf  "LMP-01.bin"
+   text	   data	    bss	    dec	    hex	filename
+  13904	     20	   1996	  15920	   3e30	LMP-01.elf
+Finished building: default.size.stdout
+ 
+Finished building: LMP-01.bin
+ 
+Finished building: LMP-01.list
+ 
+01:04:21 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:178:14: error: invalid storage class for function 'MX_SPI1_Init'
+  178 |  static void MX_SPI1_Init(void) {
+      |              ^~~~~~~~~~~~
+../Core/Src/main.c:216:14: error: invalid storage class for function 'MX_SPI2_Init'
+  216 |  static void MX_SPI2_Init(void) {
+      |              ^~~~~~~~~~~~
+../Core/Src/main.c:253:14: error: invalid storage class for function 'MX_TIM16_Init'
+  253 |  static void MX_TIM16_Init(void) {
+      |              ^~~~~~~~~~~~~
+../Core/Src/main.c:283:14: error: invalid storage class for function 'MX_USART2_UART_Init'
+  283 |  static void MX_USART2_UART_Init(void) {
+      |              ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:317:14: error: invalid storage class for function 'MX_GPIO_Init'
+  317 |  static void MX_GPIO_Init(void) {
+      |              ^~~~~~~~~~~~
+../Core/Src/main.c:350:14: error: nested function 'LedBlink' declared 'extern'
+  350 |  extern void LedBlink(uint8_t HowManyTimes) {
+      |              ^~~~~~~~
+../Core/Src/main.c:350:14: error: static declaration of 'LedBlink' follows non-static declaration
+../Core/Src/main.c:104:14: note: previous declaration of 'LedBlink' was here
+  104 |  extern void LedBlink(uint8_t count);
+      |              ^~~~~~~~
+../Core/Src/main.c:383:2: error: expected declaration or statement at end of input
+  383 |  }
+      |  ^
+../Core/Src/main.c:106:7: warning: unused variable 'flag1' [-Wunused-variable]
+  106 |  bool flag1 = 0;
+      |       ^~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:58:13: warning: 'MX_GPIO_Init' used but never defined
+   58 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:59:13: warning: 'MX_SPI1_Init' used but never defined
+   59 | static void MX_SPI1_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:60:13: warning: 'MX_USART2_UART_Init' used but never defined
+   60 | static void MX_USART2_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:61:13: warning: 'MX_TIM16_Init' used but never defined
+   61 | static void MX_TIM16_Init(void);
+      |             ^~~~~~~~~~~~~
+../Core/Src/main.c:62:13: warning: 'MX_SPI2_Init' used but never defined
+   62 | static void MX_SPI2_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:376:7: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  376 |  void Error_Handler(void) {
+      |       ^~~~~~~~~~~~~
+../Core/Src/main.c:360:7: warning: 'HAL_GPIO_EXTI_Callback' defined but not used [-Wunused-function]
+  360 |  void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:350:14: warning: 'LedBlink' defined but not used [-Wunused-function]
+  350 |  extern void LedBlink(uint8_t HowManyTimes) {
+      |              ^~~~~~~~
+../Core/Src/main.c:317:14: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  317 |  static void MX_GPIO_Init(void) {
+      |              ^~~~~~~~~~~~
+../Core/Src/main.c:283:14: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  283 |  static void MX_USART2_UART_Init(void) {
+      |              ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:253:14: warning: 'MX_TIM16_Init' defined but not used [-Wunused-function]
+  253 |  static void MX_TIM16_Init(void) {
+      |              ^~~~~~~~~~~~~
+../Core/Src/main.c:216:14: warning: 'MX_SPI2_Init' defined but not used [-Wunused-function]
+  216 |  static void MX_SPI2_Init(void) {
+      |              ^~~~~~~~~~~~
+../Core/Src/main.c:178:14: warning: 'MX_SPI1_Init' defined but not used [-Wunused-function]
+  178 |  static void MX_SPI1_Init(void) {
+      |              ^~~~~~~~~~~~
+../Core/Src/main.c:135:7: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+  135 |  void SystemClock_Config(void) {
+      |       ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+01:04:35 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:106:7: warning: unused variable 'flag1' [-Wunused-variable]
+  106 |  bool flag1 = 0;
+      |       ^~~~~
+arm-none-eabi-gcc -o "LMP-01.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Rara_\Documents\GitHub\MyCustomLEDPCB\STM32 Firmware and API\LMP-01\STM32G031F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LMP-01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LMP-01.elf
+ 
+arm-none-eabi-size   LMP-01.elf 
+arm-none-eabi-objdump -h -S  LMP-01.elf  > "LMP-01.list"
+arm-none-eabi-objcopy  -O binary  LMP-01.elf  "LMP-01.bin"
+   text	   data	    bss	    dec	    hex	filename
+  13836	     20	   1996	  15852	   3dec	LMP-01.elf
+Finished building: default.size.stdout
+ 
+Finished building: LMP-01.bin
+ 
+Finished building: LMP-01.list
+ 
+01:05:15 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:106:7: warning: unused variable 'flag1' [-Wunused-variable]
+  106 |  bool flag1 = 0;
+      |       ^~~~~
+arm-none-eabi-gcc -o "LMP-01.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Rara_\Documents\GitHub\MyCustomLEDPCB\STM32 Firmware and API\LMP-01\STM32G031F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LMP-01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LMP-01.elf
+ 
+arm-none-eabi-size   LMP-01.elf 
+arm-none-eabi-objdump -h -S  LMP-01.elf  > "LMP-01.list"
+arm-none-eabi-objcopy  -O binary  LMP-01.elf  "LMP-01.bin"
+   text	   data	    bss	    dec	    hex	filename
+  13844	     20	   1996	  15860	   3df4	LMP-01.elf
+Finished building: default.size.stdout
+ 
+Finished building: LMP-01.bin
+ 
+Finished building: LMP-01.list
+ 
+01:07:47 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LMP-01.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Rara_\Documents\GitHub\MyCustomLEDPCB\STM32 Firmware and API\LMP-01\STM32G031F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LMP-01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LMP-01.elf
+ 
+arm-none-eabi-size   LMP-01.elf 
+arm-none-eabi-objdump -h -S  LMP-01.elf  > "LMP-01.list"
+arm-none-eabi-objcopy  -O binary  LMP-01.elf  "LMP-01.bin"
+   text	   data	    bss	    dec	    hex	filename
+  14160	     20	   1996	  16176	   3f30	LMP-01.elf
+Finished building: default.size.stdout
+ 
+Finished building: LMP-01.bin
+ 
+Finished building: LMP-01.list
+ 
+01:08:32 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../IS31FL3743B/IS31FL3743B.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"IS31FL3743B/IS31FL3743B.d" -MT"IS31FL3743B/IS31FL3743B.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "IS31FL3743B/IS31FL3743B.o"
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_init':
+../IS31FL3743B/IS31FL3743B.c:97:2: warning: implicit declaration of function 'LedBlink' [-Wimplicit-function-declaration]
+   97 |  LedBlink(1);
+      |  ^~~~~~~~
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_SetDotColor':
+../IS31FL3743B/IS31FL3743B.c:172:11: error: redefinition of 'spiDataTx'
+  172 |   uint8_t spiDataTx[5] = { Page0_ADDR, baseADDR, intensityB * intensity,
+      |           ^~~~~~~~~
+../IS31FL3743B/IS31FL3743B.c:159:11: note: previous definition of 'spiDataTx' was here
+  159 |   uint8_t spiDataTx[5] = { Page0_ADDR, baseADDR, intensityB * intensity,
+      |           ^~~~~~~~~
+make: *** [IS31FL3743B/subdir.mk:19: IS31FL3743B/IS31FL3743B.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+01:10:43 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../IS31FL3743B/IS31FL3743B.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"IS31FL3743B/IS31FL3743B.d" -MT"IS31FL3743B/IS31FL3743B.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "IS31FL3743B/IS31FL3743B.o"
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_init':
+../IS31FL3743B/IS31FL3743B.c:97:2: warning: implicit declaration of function 'LedBlink' [-Wimplicit-function-declaration]
+   97 |  LedBlink(1);
+      |  ^~~~~~~~
+arm-none-eabi-gcc -o "LMP-01.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Rara_\Documents\GitHub\MyCustomLEDPCB\STM32 Firmware and API\LMP-01\STM32G031F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LMP-01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LMP-01.elf
+ 
+arm-none-eabi-size   LMP-01.elf 
+arm-none-eabi-objdump -h -S  LMP-01.elf  > "LMP-01.list"
+arm-none-eabi-objcopy  -O binary  LMP-01.elf  "LMP-01.bin"
+   text	   data	    bss	    dec	    hex	filename
+  14924	     20	   1996	  16940	   422c	LMP-01.elf
+Finished building: default.size.stdout
+ 
+Finished building: LMP-01.bin
+ 
+Finished building: LMP-01.list
+ 
+01:10:52 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-size   LMP-01.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14924	     20	   1996	  16940	   422c	LMP-01.elf
+Finished building: default.size.stdout
+ 
+01:12:22 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../IS31FL3743B/IS31FL3743B.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"IS31FL3743B/IS31FL3743B.d" -MT"IS31FL3743B/IS31FL3743B.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "IS31FL3743B/IS31FL3743B.o"
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_init':
+../IS31FL3743B/IS31FL3743B.c:97:2: warning: implicit declaration of function 'LedBlink' [-Wimplicit-function-declaration]
+   97 |  LedBlink(1);
+      |  ^~~~~~~~
+arm-none-eabi-gcc -o "LMP-01.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Rara_\Documents\GitHub\MyCustomLEDPCB\STM32 Firmware and API\LMP-01\STM32G031F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LMP-01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LMP-01.elf
+ 
+arm-none-eabi-size   LMP-01.elf 
+arm-none-eabi-objdump -h -S  LMP-01.elf  > "LMP-01.list"
+arm-none-eabi-objcopy  -O binary  LMP-01.elf  "LMP-01.bin"
+   text	   data	    bss	    dec	    hex	filename
+  14924	     20	   1996	  16940	   422c	LMP-01.elf
+Finished building: default.size.stdout
+ 
+Finished building: LMP-01.bin
+ 
+Finished building: LMP-01.list
+ 
+01:14:31 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../IS31FL3743B/IS31FL3743B.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"IS31FL3743B/IS31FL3743B.d" -MT"IS31FL3743B/IS31FL3743B.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "IS31FL3743B/IS31FL3743B.o"
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_init':
+../IS31FL3743B/IS31FL3743B.c:97:2: warning: implicit declaration of function 'LedBlink' [-Wimplicit-function-declaration]
+   97 |  LedBlink(1);
+      |  ^~~~~~~~
+arm-none-eabi-gcc -o "LMP-01.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Rara_\Documents\GitHub\MyCustomLEDPCB\STM32 Firmware and API\LMP-01\STM32G031F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LMP-01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LMP-01.elf
+ 
+arm-none-eabi-size   LMP-01.elf 
+arm-none-eabi-objdump -h -S  LMP-01.elf  > "LMP-01.list"
+arm-none-eabi-objcopy  -O binary  LMP-01.elf  "LMP-01.bin"
+   text	   data	    bss	    dec	    hex	filename
+  14912	     20	   1996	  16928	   4220	LMP-01.elf
+Finished building: default.size.stdout
+ 
+Finished building: LMP-01.bin
+ 
+Finished building: LMP-01.list
+ 
+01:20:44 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../IS31FL3743B/IS31FL3743B.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"IS31FL3743B/IS31FL3743B.d" -MT"IS31FL3743B/IS31FL3743B.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "IS31FL3743B/IS31FL3743B.o"
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_init':
+../IS31FL3743B/IS31FL3743B.c:97:2: warning: implicit declaration of function 'LedBlink' [-Wimplicit-function-declaration]
+   97 |  LedBlink(1);
+      |  ^~~~~~~~
+arm-none-eabi-gcc -o "LMP-01.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Rara_\Documents\GitHub\MyCustomLEDPCB\STM32 Firmware and API\LMP-01\STM32G031F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LMP-01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LMP-01.elf
+ 
+arm-none-eabi-size   LMP-01.elf 
+arm-none-eabi-objdump -h -S  LMP-01.elf  > "LMP-01.list"
+arm-none-eabi-objcopy  -O binary  LMP-01.elf  "LMP-01.bin"
+   text	   data	    bss	    dec	    hex	filename
+  15404	     20	   1996	  17420	   440c	LMP-01.elf
+Finished building: default.size.stdout
+ 
+Finished building: LMP-01.bin
+ 
+Finished building: LMP-01.list
+ 
+01:22:05 **** Incremental Build of configuration Debug for project LMP-01 ****
+make -j12 all 
+arm-none-eabi-gcc "../IS31FL3743B/IS31FL3743B.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"IS31FL3743B/IS31FL3743B.d" -MT"IS31FL3743B/IS31FL3743B.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "IS31FL3743B/IS31FL3743B.o"
+../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_init':
+../IS31FL3743B/IS31FL3743B.c:97:2: warning: implicit declaration of function 'LedBlink' [-Wimplicit-function-declaration]
+   97 |  LedBlink(1);
+      |  ^~~~~~~~
+arm-none-eabi-gcc -o "LMP-01.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Rara_\Documents\GitHub\MyCustomLEDPCB\STM32 Firmware and API\LMP-01\STM32G031F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LMP-01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LMP-01.elf
+ 
+arm-none-eabi-size   LMP-01.elf 
+arm-none-eabi-objdump -h -S  LMP-01.elf  > "LMP-01.list"
+arm-none-eabi-objcopy  -O binary  LMP-01.elf  "LMP-01.bin"
+   text	   data	    bss	    dec	    hex	filename
+  15404	     20	   1996	  17420	   440c	LMP-01.elf
+Finished building: default.size.stdout
+ 
+Finished building: LMP-01.bin
+ 
+Finished building: LMP-01.list
+ 

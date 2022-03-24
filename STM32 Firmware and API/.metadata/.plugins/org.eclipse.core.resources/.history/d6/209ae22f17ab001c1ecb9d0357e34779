@@ -102,67 +102,16 @@ int main(void) {
 	MX_SPI2_Init();
 	/* USER CODE BEGIN 2 */
 	extern void LedBlink(uint8_t count);
-	uint8_t x = 0;
+// uint8_t x = 0;
 	IS31FL3743B_init();
 
-	while (x <= 48) {
-		IS31FL3743B_SetDotColor(x, White, full);
-		x++;
-		MyDelay_ms(50);
-	}
+	IS31FL3743B_SetDotColor(11, White, full);
+	IS31FL3743B_SetDotColor(16, White, full);
+	IS31FL3743B_SetDotColor(38, White, full);
 
-	while (x > 0) {
-		IS31FL3743B_SetDotColor(x, White, off);
-		x--;
-		MyDelay_ms(50);
-	}
-
-	while (x <= 48) {
-		IS31FL3743B_SetDotColor(x, Red, full);
-		x++;
-		MyDelay_ms(50);
-	}
-
-	while (x > 0) {
-		IS31FL3743B_SetDotColor(x, Red, off);
-		x--;
-		MyDelay_ms(50);
-	}
-	while (x <= 48) {
-		IS31FL3743B_SetDotColor(x, Green, full);
-		x++;
-		MyDelay_ms(50);
-	}
-
-	while (x > 0) {
-		IS31FL3743B_SetDotColor(x, Green, off);
-		x--;
-		MyDelay_ms(50);
-	}
-
-	while (x <= 48) {
-		IS31FL3743B_SetDotColor(x, Blue, full);
-		x++;
-		MyDelay_ms(50);
-	}
-
-	while (x > 0) {
-		IS31FL3743B_SetDotColor(x, Blue, off);
-		x--;
-		MyDelay_ms(50);
-	}
-
-	while (x <= 48) {
-		IS31FL3743B_SetDotColor(x, Orange, full);
-		x++;
-		MyDelay_ms(50);
-	}
-
-	while (x > 0) {
-		IS31FL3743B_SetDotColor(x, Orange, off);
-		x--;
-		MyDelay_ms(50);
-	}
+	IS31FL3743B_SetDotColor(41, White, full);
+	IS31FL3743B_SetDotColor(44, White, full);
+	IS31FL3743B_SetDotColor(45, White, full);
 	/* USER CODE END 2 */
 
 	/* Infinite loop */
@@ -171,10 +120,10 @@ int main(void) {
 		/* USER CODE END WHILE */
 
 		/* USER CODE BEGIN 3 */
-
-		/* USER CODE END 3 */
 	}
+	/* USER CODE END 3 */
 }
+
 /**
  * @brief System Clock Configuration
  * @retval None
@@ -193,13 +142,7 @@ void SystemClock_Config(void) {
 	RCC_OscInitStruct.HSIState = RCC_HSI_ON;
 	RCC_OscInitStruct.HSIDiv = RCC_HSI_DIV1;
 	RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
-	RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-	RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
-	RCC_OscInitStruct.PLL.PLLM = RCC_PLLM_DIV1;
-	RCC_OscInitStruct.PLL.PLLN = 8;
-	RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
-	RCC_OscInitStruct.PLL.PLLQ = RCC_PLLQ_DIV2;
-	RCC_OscInitStruct.PLL.PLLR = RCC_PLLR_DIV2;
+	RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
 	if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK) {
 		Error_Handler();
 	}
@@ -207,11 +150,11 @@ void SystemClock_Config(void) {
 	 */
 	RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK
 			| RCC_CLOCKTYPE_PCLK1;
-	RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+	RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
 	RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
 	RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
 
-	if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK) {
+	if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK) {
 		Error_Handler();
 	}
 }
@@ -261,10 +204,6 @@ static void MX_SPI1_Init(void) {
  */
 static void MX_SPI2_Init(void) {
 
-	/* USER CODE BEGIN SPI2_Init 0 */
-
-	/* USER CODE END SPI2_Init 0 */
-
 	/* USER CODE BEGIN SPI2_Init 1 */
 
 	/* USER CODE END SPI2_Init 1 */
@@ -298,17 +237,13 @@ static void MX_SPI2_Init(void) {
  */
 static void MX_TIM16_Init(void) {
 
-	/* USER CODE BEGIN TIM16_Init 0 */
-
-	/* USER CODE END TIM16_Init 0 */
-
 	/* USER CODE BEGIN TIM16_Init 1 */
 
 	/* USER CODE END TIM16_Init 1 */
 	htim16.Instance = TIM16;
-	htim16.Init.Prescaler = 6400 - 1;
+	htim16.Init.Prescaler = 1600 - 1;
 	htim16.Init.CounterMode = TIM_COUNTERMODE_UP;
-	htim16.Init.Period = 65535 - 1;
+	htim16.Init.Period = 65535;
 	htim16.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
 	htim16.Init.RepetitionCounter = 0;
 	htim16.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
@@ -327,10 +262,6 @@ static void MX_TIM16_Init(void) {
  * @retval None
  */
 static void MX_USART2_UART_Init(void) {
-
-	/* USER CODE BEGIN USART2_Init 0 */
-
-	/* USER CODE END USART2_Init 0 */
 
 	/* USER CODE BEGIN USART2_Init 1 */
 

@@ -116,22 +116,12 @@ uint8_t IS31FL3743B_SetDotColor(uint8_t led, uint8_t color, uint8_t intensity) {
 
 		intensityG = 0x00;
 		intensityR = 0x00;
-		uint8_t spiDataTx[5] = { Page0_ADDR, baseADDR, intensityB * intensity,
-				intensityG * intensity, intensityR * intensity };
-		HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, 0); // Pull chip select low
-		HAL_SPI_Transmit_IT(&hspi1, spiDataTx, sizeof(spiDataTx));
-		HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, 1); // Pull chip select high
 		break;
 
 	case Green:
 		intensityB = 0x00;
 		intensityG = 0x01;
 		intensityR = 0x00;
-		uint8_t spiDataTx2[5] = { Page0_ADDR, baseADDR, intensityB * intensity,
-				intensityG * intensity, intensityR * intensity };
-		HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, 0); // Pull chip select low
-		HAL_SPI_Transmit_IT(&hspi1, spiDataTx2, sizeof(spiDataTx2));
-		HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, 1); // Pull chip select high
 		break;
 
 	case Red:
@@ -139,11 +129,6 @@ uint8_t IS31FL3743B_SetDotColor(uint8_t led, uint8_t color, uint8_t intensity) {
 		intensityG = 0x00;
 
 		intensityR = 0x01;
-		uint8_t spiDataTx3[5] = { Page0_ADDR, baseADDR, intensityB * intensity,
-				intensityG * intensity, intensityR * intensity };
-		HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, 0); // Pull chip select low
-		HAL_SPI_Transmit_IT(&hspi1, spiDataTx3, sizeof(spiDataTx3));
-		HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, 1); // Pull chip select high
 		break;
 
 	case Cyan:
@@ -151,12 +136,6 @@ uint8_t IS31FL3743B_SetDotColor(uint8_t led, uint8_t color, uint8_t intensity) {
 		intensityG = 0x00;
 
 		intensityR = 0x01;
-		uint8_t spiDataTx4[5] = { Page0_ADDR, baseADDR, intensityB * intensity,
-				intensityG * intensity, intensityR * intensity };
-		HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, 0); // Pull chip select low
-		HAL_SPI_Transmit_IT(&hspi1, spiDataTx4, sizeof(spiDataTx4));
-		HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, 1); // Pull chip select high
-
 		break;
 
 	case Yellow:
@@ -164,32 +143,23 @@ uint8_t IS31FL3743B_SetDotColor(uint8_t led, uint8_t color, uint8_t intensity) {
 
 		intensityG = 0x00;
 		intensityR = 0x00;
-		uint8_t spiDataTx5[5] = { Page0_ADDR, baseADDR, intensityB * intensity,
-				intensityG * intensity, intensityR * intensity };
-		HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, 0); // Pull chip select low
-		HAL_SPI_Transmit_IT(&hspi1, spiDataTx5, sizeof(spiDataTx5));
-		HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, 1); // Pull chip select high
 		break;
 
 	case Purple:
 		intensityB = 0x00;
 		intensityG = 0x01;
 		intensityR = 0x00;
-		uint8_t spiDataTx6[5] = { Page0_ADDR, baseADDR, intensityB * intensity,
-				intensityG * intensity, intensityR * intensity };
-		HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, 0); // Pull chip select low
-		HAL_SPI_Transmit_IT(&hspi1, spiDataTx6, sizeof(spiDataTx6));
-		HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, 1); // Pull chip select high
 		break;
 
 	case Orange:
 		intensityB = 0x00;
-		intensityG = 0x01;
+
+		intensityG = intensityR * (2 / 3);
 		intensityR = 0x01;
-		uint8_t spiDataTx7[5] = { Page0_ADDR, baseADDR, intensityB * intensity,
-				((2 * intensityR) / 5) * intensity, intensityR * intensity };
+		uint8_t spiDataTx[5] = { Page0_ADDR, baseADDR, intensityB * intensity,
+				intensityG * intensity, intensityR * intensity };
 		HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, 0); // Pull chip select low
-		HAL_SPI_Transmit_IT(&hspi1, spiDataTx7, sizeof(spiDataTx7));
+		HAL_SPI_Transmit_IT(&hspi1, spiDataTx, sizeof(spiDataTx));
 		HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, 1); // Pull chip select high
 		break;
 
@@ -199,10 +169,10 @@ uint8_t IS31FL3743B_SetDotColor(uint8_t led, uint8_t color, uint8_t intensity) {
 		intensityR = 0x01;
 
 		//no need to change anything
-		uint8_t spiDataTx8[5] = { Page0_ADDR, baseADDR, intensityB * intensity,
+		uint8_t spiDataTx[5] = { Page0_ADDR, baseADDR, intensityB * intensity,
 				intensityG * intensity, intensityR * intensity };
 		HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, 0); // Pull chip select low
-		HAL_SPI_Transmit_IT(&hspi1, spiDataTx8, sizeof(spiDataTx8));
+		HAL_SPI_Transmit_IT(&hspi1, spiDataTx, sizeof(spiDataTx));
 		HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, 1); // Pull chip select high
 		break;
 

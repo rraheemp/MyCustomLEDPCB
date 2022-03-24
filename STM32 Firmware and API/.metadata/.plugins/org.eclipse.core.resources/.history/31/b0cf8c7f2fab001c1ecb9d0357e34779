@@ -103,66 +103,9 @@ int main(void) {
 	/* USER CODE BEGIN 2 */
 	extern void LedBlink(uint8_t count);
 	uint8_t x = 0;
+	bool flag1 = 0;
 	IS31FL3743B_init();
 
-	while (x <= 48) {
-		IS31FL3743B_SetDotColor(x, White, full);
-		x++;
-		MyDelay_ms(50);
-	}
-
-	while (x > 0) {
-		IS31FL3743B_SetDotColor(x, White, off);
-		x--;
-		MyDelay_ms(50);
-	}
-
-	while (x <= 48) {
-		IS31FL3743B_SetDotColor(x, Red, full);
-		x++;
-		MyDelay_ms(50);
-	}
-
-	while (x > 0) {
-		IS31FL3743B_SetDotColor(x, Red, off);
-		x--;
-		MyDelay_ms(50);
-	}
-	while (x <= 48) {
-		IS31FL3743B_SetDotColor(x, Green, full);
-		x++;
-		MyDelay_ms(50);
-	}
-
-	while (x > 0) {
-		IS31FL3743B_SetDotColor(x, Green, off);
-		x--;
-		MyDelay_ms(50);
-	}
-
-	while (x <= 48) {
-		IS31FL3743B_SetDotColor(x, Blue, full);
-		x++;
-		MyDelay_ms(50);
-	}
-
-	while (x > 0) {
-		IS31FL3743B_SetDotColor(x, Blue, off);
-		x--;
-		MyDelay_ms(50);
-	}
-
-	while (x <= 48) {
-		IS31FL3743B_SetDotColor(x, Orange, full);
-		x++;
-		MyDelay_ms(50);
-	}
-
-	while (x > 0) {
-		IS31FL3743B_SetDotColor(x, Orange, off);
-		x--;
-		MyDelay_ms(50);
-	}
 	/* USER CODE END 2 */
 
 	/* Infinite loop */
@@ -171,10 +114,27 @@ int main(void) {
 		/* USER CODE END WHILE */
 
 		/* USER CODE BEGIN 3 */
+		while (flag1 == 0) {
+			IS31FL3743B_SetDotColor(x, White, full);
+			x++;
+			MyDelay_ms(250);
+			if (x >= 48) {
+				flag1 = 1;
+			}
+		}
+		while (flag1 == 1) {
+			IS31FL3743B_SetDotColor(x, White, off);
+			x--;
+			MyDelay_ms(250);
+			if (x == 0) {
+				flag1 = 0;
+			}
+		}
 
-		/* USER CODE END 3 */
 	}
+	/* USER CODE END 3 */
 }
+
 /**
  * @brief System Clock Configuration
  * @retval None

@@ -28,7 +28,7 @@ enum Colors {
 
 //Custom intensities
 enum Intensities {
-	off = 0x00, low = 0x40, half = 0x80, high = 0x6C, full = 0xfe
+	Off = 0x00, low = 0x40, half = 0x80, high = 0x6C, full = 0xfe
 };
 /*
  * IS31FL3743B command byte definitions
@@ -42,16 +42,27 @@ enum Intensities {
 //Page 2 has several important registers
 #define Config_ADDR 0x00 					// Configure the operation mode
 #define GCC_ADDR 0x01 						// Global current
+
 #define SCALE_ADDR 0x01						// scaling
+
+
+
+
 #define SW_PullUp_CS__PullDown_ADDR 0x02 	// Set the pull down resistor for SWx and pull up resistor for CSy
+
 #define SCALE_ADDR 0x01						// scaling
 #define SW_PullUp_CS_PullDown_ADDR 0x02 	// Set the pull down resistor for SWx and pull up resistor for CSy
+
+
 #define SCALE_ADDR 0x01						// scaling
 #define SW_PullUp_CS_PullDown_ADDR 0x02 	// Set the pull down resistor for SWx and pull up resistor for CSy
+
 #define OpenShort_ADDR 0x03 				// start address for open short
 #define TempStat_ADDR 0x24					// temperature of IC (read)
 #define SpreadSpec_ADDR 0x25				// spread spectrum
 #define Reset_ADDR	0x2F					// reset register
+
+#define SDB_ADDR
 
 //Default Values
 #define ConfigDef 0b00111001 // 0x39
@@ -68,6 +79,8 @@ enum Intensities {
 #define GCCDef 0x80
 #define ResetDef 0xAE
 #define SWxCSxDef 0x55 // 0101 0101
+
+
 #define StartADDR 0x01 						// Start address
 
 //Default Values
@@ -75,6 +88,8 @@ enum Intensities {
 #define GCCDef 0x80
 #define ResetDef 0xAE
 #define SWxCSxDef 0x55 // 0101 0101
+
+
 
 //IS31FL3743B Functions
 void IS31FL3743B_init(void);

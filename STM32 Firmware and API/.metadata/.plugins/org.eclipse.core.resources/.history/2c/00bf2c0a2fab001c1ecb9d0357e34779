@@ -28,7 +28,7 @@ enum Colors {
 
 //Custom intensities
 enum Intensities {
-	off = 0x00, low = 0x40, half = 0x80, high = 0x6C, full = 0xfe
+	Off = 0x00, low = 0x40, half = 0x80, high = 0x6C, full = 0xfe
 };
 /*
  * IS31FL3743B command byte definitions

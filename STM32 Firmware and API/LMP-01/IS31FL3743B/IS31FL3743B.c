@@ -22,6 +22,14 @@ const uint8_t PWM_Gamma64[64] = { 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06,
 		0x8d, 0x94, 0x9a, 0xa0, 0xa7, 0xac, 0xb0, 0xb9, 0xbf, 0xc6, 0xcb, 0xcf,
 		0xd6, 0xe1, 0xe9, 0xed, 0xf1, 0xf6, 0xfa, 0xfe, 0xff };
 
+const uint8_t RightDigitArray[] =
+		{ 2, 3, 4, 5, 6, 8, 10, 12, 14, 15, 16, 17, 18 };
+
+const uint8_t Decimal[] = { 20, 21, 26, 27 };
+
+const uint8_t LeftDigitArray[] = { 32, 33, 34, 35, 36, 38, 40, 42, 44, 45, 46,
+		47, 48 };
+
 //IS31FL3743B_init();
 //
 //	IS31FL3743B_SetDotColor(11, White, full);
@@ -113,7 +121,6 @@ uint8_t IS31FL3743B_SetDotColor(uint8_t led, uint8_t color, uint8_t intensity) {
 	switch (color) {
 	case Blue:
 		intensityB = 0x01;
-
 		intensityG = 0x00;
 		intensityR = 0x00;
 		uint8_t spiDataTx[5] = { Page0_ADDR, baseADDR, intensityB * intensity,
@@ -137,7 +144,6 @@ uint8_t IS31FL3743B_SetDotColor(uint8_t led, uint8_t color, uint8_t intensity) {
 	case Red:
 		intensityB = 0x00;
 		intensityG = 0x00;
-
 		intensityR = 0x01;
 		uint8_t spiDataTx3[5] = { Page0_ADDR, baseADDR, intensityB * intensity,
 				intensityG * intensity, intensityR * intensity };
@@ -149,7 +155,6 @@ uint8_t IS31FL3743B_SetDotColor(uint8_t led, uint8_t color, uint8_t intensity) {
 	case Cyan:
 		intensityB = 0x00;
 		intensityG = 0x00;
-
 		intensityR = 0x01;
 		uint8_t spiDataTx4[5] = { Page0_ADDR, baseADDR, intensityB * intensity,
 				intensityG * intensity, intensityR * intensity };
@@ -161,7 +166,6 @@ uint8_t IS31FL3743B_SetDotColor(uint8_t led, uint8_t color, uint8_t intensity) {
 
 	case Yellow:
 		intensityB = 0x01;
-
 		intensityG = 0x00;
 		intensityR = 0x00;
 		uint8_t spiDataTx5[5] = { Page0_ADDR, baseADDR, intensityB * intensity,
@@ -197,8 +201,6 @@ uint8_t IS31FL3743B_SetDotColor(uint8_t led, uint8_t color, uint8_t intensity) {
 		intensityB = 0x01;
 		intensityG = 0x01;
 		intensityR = 0x01;
-
-		//no need to change anything
 		uint8_t spiDataTx8[5] = { Page0_ADDR, baseADDR, intensityB * intensity,
 				intensityG * intensity, intensityR * intensity };
 		HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, 0); // Pull chip select low
@@ -207,10 +209,25 @@ uint8_t IS31FL3743B_SetDotColor(uint8_t led, uint8_t color, uint8_t intensity) {
 		break;
 
 	default:
+		intensityB = 0x00;
+		intensityG = 0x00;
+		intensityR = 0x00;
+		uint8_t spiDataTx9[5] = { Page0_ADDR, baseADDR, intensityB * intensity,
+				intensityG * intensity, intensityR * intensity };
+		HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, 0); // Pull chip select low
+		HAL_SPI_Transmit_IT(&hspi1, spiDataTx9, sizeof(spiDataTx9));
+		HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, 1); // Pull chip select high
 		break;
 	}
 	return HAL_OK;
 }
+
+void IS31FL3743B_ClearAll(void) {
+	for (uint8_t dot = 1; dot <= 48; dot++) {
+		IS31FL3743B_SetDotColor(dot, -1, full);
+	}
+}
+;
 
 void IS31FL3743B_SetColumnColor(uint8_t row, uint8_t color) {
 

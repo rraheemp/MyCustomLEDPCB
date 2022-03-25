@@ -33,7 +33,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
+#define TIME 200
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -50,7 +50,17 @@ TIM_HandleTypeDef htim16;
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
-
+//Numbers
+const uint8_t zeroR[] = { 2, 3, 4, 5, 6, 8, 12, 14, 15, 16, 17, 18 }; //0
+const uint8_t oneR[] = { 2, 3, 4, 5, 6 };
+const uint8_t twoR[] = { 2, 8, 14, 15, 16, 10, 4, 5, 6, 12, 18 };
+const uint8_t threeR[] = { 18, 12, 6, 5, 4, 10, 16, 3, 14, 8, 2 };
+const uint8_t fourR[] = { 18, 6, 17, 5, 16, 10, 4, 3, 2 };
+const uint8_t fiveR[] = { 6, 12, 18, 17, 16, 10, 4, 3, 2, 8, 14 };
+const uint8_t sixR[] = { 6, 12, 18, 17, 16, 10, 4, 15, 3, 14, 8, 2 };
+const uint8_t sevenR[] = { 18, 12, 6, 5, 4, 3, 2};
+const uint8_t eightR[] = { 2, 3, 4, 5, 6, 8, 10, 12, 14, 15, 16, 17, 18 };
+const uint8_t nineR[] = { 18, 12, 6, 5, 4, 3, 2, 17, 16, 10 };
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -105,64 +115,6 @@ int main(void) {
 	uint8_t x = 0;
 	IS31FL3743B_init();
 
-	while (x <= 48) {
-		IS31FL3743B_SetDotColor(x, White, full);
-		x++;
-		MyDelay_ms(50);
-	}
-
-	while (x > 0) {
-		IS31FL3743B_SetDotColor(x, White, off);
-		x--;
-		MyDelay_ms(50);
-	}
-
-	while (x <= 48) {
-		IS31FL3743B_SetDotColor(x, Red, full);
-		x++;
-		MyDelay_ms(50);
-	}
-
-	while (x > 0) {
-		IS31FL3743B_SetDotColor(x, Red, off);
-		x--;
-		MyDelay_ms(50);
-	}
-	while (x <= 48) {
-		IS31FL3743B_SetDotColor(x, Green, full);
-		x++;
-		MyDelay_ms(50);
-	}
-
-	while (x > 0) {
-		IS31FL3743B_SetDotColor(x, Green, off);
-		x--;
-		MyDelay_ms(50);
-	}
-
-	while (x <= 48) {
-		IS31FL3743B_SetDotColor(x, Blue, full);
-		x++;
-		MyDelay_ms(50);
-	}
-
-	while (x > 0) {
-		IS31FL3743B_SetDotColor(x, Blue, off);
-		x--;
-		MyDelay_ms(50);
-	}
-
-	while (x <= 48) {
-		IS31FL3743B_SetDotColor(x, Orange, full);
-		x++;
-		MyDelay_ms(50);
-	}
-
-	while (x > 0) {
-		IS31FL3743B_SetDotColor(x, Orange, off);
-		x--;
-		MyDelay_ms(50);
-	}
 	/* USER CODE END 2 */
 
 	/* Infinite loop */
@@ -171,7 +123,99 @@ int main(void) {
 		/* USER CODE END WHILE */
 
 		/* USER CODE BEGIN 3 */
+		switch (x) {
+		case 0:
+			for (uint8_t dot = 0; dot <= sizeof(zeroR); dot++) {
+				IS31FL3743B_SetDotColor(zeroR[dot], Green, full);
+			}
+			MyDelay_ms(TIME);
+			x++;
+			IS31FL3743B_ClearAll();
 
+			break;
+
+		case 1:
+			for (uint8_t dot = 0; dot <= sizeof(oneR); dot++) {
+				IS31FL3743B_SetDotColor(oneR[dot], Green, full);
+			}
+			MyDelay_ms(TIME);
+			x++;
+			IS31FL3743B_ClearAll();
+
+			break;
+
+		case 2:
+			for (uint8_t dot = 0; dot <= sizeof(twoR); dot++) {
+				IS31FL3743B_SetDotColor(twoR[dot], Green, full);
+			}
+			MyDelay_ms(TIME);
+			x++;
+			IS31FL3743B_ClearAll();
+			break;
+
+		case 3:
+			for (uint8_t dot = 0; dot <= sizeof(threeR); dot++) {
+				IS31FL3743B_SetDotColor(threeR[dot], Green, full);
+			}
+			MyDelay_ms(TIME);
+			x++;
+			IS31FL3743B_ClearAll();
+			break;
+
+		case 4:
+			for (uint8_t dot = 0; dot <= sizeof(fourR); dot++) {
+				IS31FL3743B_SetDotColor(fourR[dot], Green, full);
+			}
+			MyDelay_ms(TIME);
+			x++;
+			IS31FL3743B_ClearAll();
+			break;
+
+		case 5:
+			for (uint8_t dot = 0; dot <= sizeof(fiveR); dot++) {
+				IS31FL3743B_SetDotColor(fiveR[dot], Green, full);
+			}
+			MyDelay_ms(TIME);
+			x++;
+			IS31FL3743B_ClearAll();
+			break;
+
+		case 6:
+			for (uint8_t dot = 0; dot <= sizeof(sixR); dot++) {
+				IS31FL3743B_SetDotColor(sixR[dot], Green, full);
+			}
+			MyDelay_ms(TIME + 300);
+			x++;
+			IS31FL3743B_ClearAll();
+			break;
+
+		case 7:
+			for (uint8_t dot = 0; dot <= sizeof(sevenR); dot++) {
+				IS31FL3743B_SetDotColor(sevenR[dot], Green, full);
+			}
+			MyDelay_ms(TIME);
+			x++;
+			IS31FL3743B_ClearAll();
+			break;
+
+		case 8:
+			for (uint8_t dot = 0; dot <= sizeof(eightR); dot++) {
+				IS31FL3743B_SetDotColor(eightR[dot], Green, full);
+			}
+			MyDelay_ms(TIME);
+			x++;
+			IS31FL3743B_ClearAll();
+			break;
+
+		case 9:
+			for (uint8_t dot = 0; dot <= sizeof(nineR); dot++) {
+				IS31FL3743B_SetDotColor(nineR[dot], Green, full);
+			}
+			MyDelay_ms(TIME);
+			x++;
+			IS31FL3743B_ClearAll();
+			break;
+		}
 		/* USER CODE END 3 */
 	}
 }

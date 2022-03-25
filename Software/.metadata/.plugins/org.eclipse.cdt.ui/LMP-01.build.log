@@ -1,10 +1,6 @@
-01:22:05 **** Incremental Build of configuration Debug for project LMP-01 ****
+18:05:51 **** Incremental Build of configuration Debug for project LMP-01 ****
 make -j12 all 
-arm-none-eabi-gcc "../IS31FL3743B/IS31FL3743B.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"IS31FL3743B/IS31FL3743B.d" -MT"IS31FL3743B/IS31FL3743B.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "IS31FL3743B/IS31FL3743B.o"
-../IS31FL3743B/IS31FL3743B.c: In function 'IS31FL3743B_init':
-../IS31FL3743B/IS31FL3743B.c:97:2: warning: implicit declaration of function 'LedBlink' [-Wimplicit-function-declaration]
-   97 |  LedBlink(1);
-      |  ^~~~~~~~
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/IS31FL3743B" -I"C:/Users/Rara_/Documents/GitHub/MyCustomLEDPCB/STM32 Firmware and API/LMP-01/MyDelay" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "LMP-01.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Rara_\Documents\GitHub\MyCustomLEDPCB\STM32 Firmware and API\LMP-01\STM32G031F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LMP-01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: LMP-01.elf
  
@@ -12,7 +8,7 @@ arm-none-eabi-size   LMP-01.elf
 arm-none-eabi-objdump -h -S  LMP-01.elf  > "LMP-01.list"
 arm-none-eabi-objcopy  -O binary  LMP-01.elf  "LMP-01.bin"
    text	   data	    bss	    dec	    hex	filename
-  15404	     20	   1996	  17420	   440c	LMP-01.elf
+  16140	     20	   1996	  18156	   46ec	LMP-01.elf
 Finished building: default.size.stdout
  
 Finished building: LMP-01.bin
@@ -20,5 +16,5 @@ Finished building: LMP-01.bin
 Finished building: LMP-01.list
  
 
-01:22:06 Build Finished. 0 errors, 1 warnings. (took 1s.100ms)
+18:05:52 Build Finished. 0 errors, 0 warnings. (took 1s.149ms)
 

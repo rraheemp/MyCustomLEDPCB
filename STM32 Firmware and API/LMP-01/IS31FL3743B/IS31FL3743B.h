@@ -80,6 +80,7 @@ enum Intensities {
 void IS31FL3743B_init(void);
 uint16_t IS31FL3743B_TempStat(void);
 uint8_t IS31FL3743B_SetDotColor(uint8_t led, uint8_t color, uint8_t intensity);
+void IS31FL3743B_ClearAll(void);
 void IS31FL3743B_SetFullColor(uint8_t color, uint8_t intensity);
 void IS31FL3743B_SetColumnColor(uint8_t row, uint8_t color);
 void IS31FL3743B_Breathe(uint8_t color, int speed);
